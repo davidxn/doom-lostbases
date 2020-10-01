@@ -1,0 +1,103 @@
+clearepisodes
+
+defaultmap
+{
+	checkswitchrange
+	SmoothLighting
+	NoJump
+	NoCrouch
+	NoIntermission
+    lightmode = 0
+}
+
+episode MAP01
+{
+	name = "The Lost Bases"
+	key = "1"
+}
+
+map MAP01 "Decayed Outpost"
+{
+    cluster = 1
+	levelnum = 1
+	next = "MAP03"
+	sky1 = "SKY1"
+	par = 60
+	music = "DN_GROOV"
+    lightning
+}
+
+map MAP02 "Inlets"
+{
+    cluster = 1
+	levelnum = 2
+	next = "MAP03"
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
+
+map MAP03 "Slime Factory"
+{
+    cluster = 1
+	levelnum = 3
+	next = "MAP05"
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
+
+map MAP04 ""
+{
+    cluster = 1
+	levelnum = 4
+	next = "MAP05"
+	secretnext = "MAP00"
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
+
+map MAP05 "Marine Lab"
+{
+    cluster = 1
+	levelnum = 5
+	next = "MAP07"
+	secretnext = ""
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
+
+map MAP06 ""
+{
+    cluster = 1
+	levelnum = 6
+	next = "MAP07"
+	secretnext = ""
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
+
+map MAP07 "Research Station"
+{
+    cluster = 1
+	levelnum = 7
+	next = "MAP08"
+	secretnext = "MAP10"
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
+
+map MAP08 "Cruel Stratum"
+{
+	cluster = 1
+	levelnum = 8
+	next = "EndGame1"
+	secretnext = ""
+	sky1 = "SKY1"
+	par = 60
+	music = ""
+}
