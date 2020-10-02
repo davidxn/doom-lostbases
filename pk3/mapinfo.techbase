@@ -6,7 +6,6 @@ defaultmap
 	SmoothLighting
 	NoJump
 	NoCrouch
-	NoIntermission
     lightmode = 0
 }
 
