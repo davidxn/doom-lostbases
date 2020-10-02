@@ -17,7 +17,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = -56.52834f;
+		viewpositionx = 1283.204f;
 		defaulttoptexture = "BRONZE1";
 		
 		fieldtypes
@@ -75,7 +75,7 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "BRONZE1";
 		defaultfloortexture = "FLOOR0_1";
-		viewpositiony = 1568.309f;
+		viewpositiony = 1025.654f;
 		defaultwalltexture = "BRONZE1";
 		customceilheight = 128;
 		overridemiddletexture = false;
