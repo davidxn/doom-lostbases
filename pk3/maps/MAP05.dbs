@@ -1,0 +1,91 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_LostBases.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	E2M2
+	{
+		defaultceiltexture = "CEIL5_G3";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = 1845f;
+		defaulttoptexture = "TEKGREN5";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				xscaleceiling = 1;
+				floor_reflect = 1;
+				xscalefloor = 1;
+				desaturation = 1;
+				xpanningfloor = 1;
+				yscaleceiling = 1;
+				lightcolor = 0;
+				xpanningceiling = 1;
+				yscalefloor = 1;
+				rotationfloor = 1;
+				rotationceiling = 1;
+				lightceiling = 0;
+				ypanningfloor = 1;
+				ypanningceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsety_bottom = 1;
+				offsetx_top = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsetx_mid = 1;
+				offsety_top = 1;
+			}
+			
+			linedef
+			{
+				locknumber = 0;
+				arg0str = 2;
+				alpha = 1;
+				renderstyle = 2;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0f;
+			backscaley = 100;
+			gridrotate = 0f;
+			backscalex = 100;
+			gridoriginx = 0f;
+			gridsize = 32f;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "TEKGREN5";
+		defaultfloortexture = "FLOOR33W";
+		viewpositiony = 957f;
+		defaultwalltexture = "TEKGREN5";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 0.9613997f;
+	}
+}

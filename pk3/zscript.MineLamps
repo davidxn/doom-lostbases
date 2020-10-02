@@ -1,0 +1,67 @@
+class MineLamp1 : Actor
+{
+	Default
+	{
+		//$Title "Mine Lamp"
+		//$Category "Decoration/Tech/Lights"
+		Radius 12;
+		Height 80;
+		+SPAWNCEILING;
+		+NOGRAVITY;
+		+FORCEYBILLBOARD;
+	}
+
+	States
+	{
+		Spawn:
+			VLT1 ABCD 3;
+			Loop;
+	}
+}
+
+class MineLamp1Broken : MineLamp1
+{
+	Default
+	{
+		//$Title "Mine Lamp Broken"
+	}
+	
+	States
+	{
+		Spawn:
+			VLT1 E -1;
+			Stop;
+	}
+}
+
+class MineLamp2 : MineLamp1
+{
+	Default
+	{
+		//$Title "Mine Lamp 2"
+		Height 28;
+	}
+
+	States
+	{
+		Spawn:
+			VLT2 ABCD 3;
+			Loop;
+	}
+}
+
+class MineLamp2Broken : MineLamp2
+{
+	Default
+	{
+		//$Title "Mine Lamp 2 Broken"
+		Height 28;
+	}
+
+	States
+	{
+		Spawn:
+			VLT2 E -1;
+			Stop;
+	}
+}

@@ -1,0 +1,45 @@
+class TechColumnYellow : Actor
+{
+	override void PostBeginPlay()
+	{	
+		switch(Args[0])
+		{
+			case 0: SetStateLabel("ShortSpawn"); A_SetSize(-1, 16); break;
+			case 1: SetStateLabel("MediumSpawn"); A_SetSize(-1, 48); break;
+			case 2: SetStateLabel("TallSpawn"); A_SetSize(-1, 60); break;
+		}
+		
+		Super.PostBeginPlay();
+	}
+	
+	Default
+	{
+		//$Title "Tech Column Yellow"
+		//$Sprite "SCOLA0"
+		//$Arg0 "Height"
+		//$Arg0Type 11
+		//$Arg0Enum { 0 = "Short"; 1 = "Medium"; 2 = "Tall"; }
+		Radius 12;
+        +SOLID;
+	}
+	
+	States
+	{
+		ShortSpawn:
+			SCOL A -1;
+			Stop;
+		MediumSpawn:
+			SCOL B -1;
+			Stop;
+		TallSpawn:
+			SCOL C -1;
+			Stop;
+	}
+}
+
+class TechColumnBlue : TechColumnYellow
+{
+    Default {
+        Translation "160:167=196:207", "224:231=192:198";
+    }
+}

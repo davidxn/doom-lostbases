@@ -1,0 +1,17 @@
+#include "DECORATE/JOM.txt"
+
+actor QuakeGrunt : ShotgunGuy
+{
+    Translation "96:111=112:127", "32:47=121:127"
+    Health 80
+    Speed 3
+    PainChance 250
+    States {
+        Missile:
+            SPOS E 10 A_FaceTarget
+            SPOS F 0 bright A_PlaySound("shotguy/attack", CHAN_WEAPON)
+            SPOS F 10 bright A_CustomBulletAttack(22.5, 0, 3, random(1,4)*3, "BulletPuff", 0, CBAF_NORANDOM)
+            SPOS E 10
+            Goto See
+    }
+}

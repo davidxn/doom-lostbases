@@ -101,3 +101,12 @@ map MAP08 "Cruel Stratum"
 	par = 60
 	music = ""
 }
+
+DoomEdNums {
+	10000 = LightBlueTorch
+	10001 = PinkTorch
+	10002 = WhiteTorch
+    10109 = TLamp1
+	10110 = TLamp2
+    10403 = QuakeGrunt
+}

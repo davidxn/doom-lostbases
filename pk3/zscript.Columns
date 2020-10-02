@@ -1,0 +1,1066 @@
+/*	
+------------------------------------------------------------
+	L-50 ZSCRIPT
+	Code © Tapwave 2017
+	All rights reserved.
+------------------------------------------------------------
+*/
+
+//Columns are coded by type and color.
+//Colors: Black, grAy, cRimson, Green, Mixed, Ice, Sand
+//Types: Mini (MSCL*), Tall (SSCL*), Heart (HCL*A/B), Skull (SKLC*), Vines (VNCL*)
+//Large Smooth (TSCL*), Large Corinthian (TCCL*), Large Spiral (TPCL*)
+//Doom has Bright Red columns that weren't incorporated here for aesthetic reasons. (I.e they're ugg.)
+//This means SkullColumn is a red base, HeartColumn is a green base. They don't have the opposite color as a variant.
+
+// Mini Columns
+class ShortBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Tiny Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			MSCL B -1;
+			Stop;
+	}
+}
+
+class ShortGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Tiny Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			MSCL A -1;
+			Stop;
+	}
+}
+class ShortCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Tiny Column, Red"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			MSCL R -1;
+			Stop;
+	}
+}
+class ShortMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Tiny Column, Mixed"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			MSCL M -1;
+			Stop;
+	}
+}
+
+class ShortSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Tiny Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			MSCL S -1;
+			Stop;
+	}
+}
+class ShortIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Tiny Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			MSCL I -1;
+			Stop;
+	}
+}
+// Tall columns
+class TallBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Tall Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 52;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SSCL B -1;
+			Stop;
+	}
+}
+
+class TallGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Tall Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 52;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SSCL A -1;
+			Stop;
+	}
+}
+class TallCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Tall Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 52;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SSCL R -1;
+			Stop;
+	}
+}
+class TallMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Tall Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 52;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SSCL M -1;
+			Stop;
+	}
+}
+
+class TallSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Tall Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 52;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SSCL S -1;
+			Stop;
+	}
+}
+class TallIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Tall Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 52;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SSCL I -1;
+			Stop;
+	}
+}
+
+// Skull columns
+class SkullGreenColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Green"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL G -1;
+			Stop;
+	}
+}
+
+class SkullBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL B -1;
+			Stop;
+	}
+}
+class SkullGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL A -1;
+			Stop;
+	}
+}
+class SkullCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL R -1;
+			Stop;
+	}
+}
+
+class SkullMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL M -1;
+			Stop;
+	}
+}
+class SkullSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL S -1;
+			Stop;
+	}
+}
+class SkullIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Skull Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			SKCL I -1;
+			Stop;
+	}
+}
+
+// Vine columns
+class VineGreenColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL G -1;
+			Stop;
+	}
+}
+class VineBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL B -1;
+			Stop;
+	}
+}
+class VineGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL A -1;
+			Stop;
+	}
+}
+
+class VineCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL R -1;
+			Stop;
+	}
+}
+	
+class VineMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL M -1;
+			Stop;
+	}
+}
+
+class VineSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL S -1;
+			Stop;
+	}
+}
+
+class VineIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Vine Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			VNCL I -1;
+			Stop;
+	}
+}
+
+// Heart columns
+class HeartCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Heart Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			HCLR AB 14;
+			Loop;
+	}
+}
+
+class HeartGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Heart Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			HCLA AB 14;
+			Loop;
+	}
+}
+
+class HeartBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Heart Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			HCLB AB 14;
+			Loop;
+	}
+}
+
+class HeartMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Heart Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			HCLM AB 14;
+			Loop;
+	}
+}
+
+class HeartSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Heart Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			HCLS AB 14;
+			Loop;
+	}
+}
+
+class HeartIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Heart Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 40;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			HCLI AB 14;
+			Loop;
+	}
+}
+	
+// Large, smooth columns
+class LargeGreenColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Green"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL G -1;
+			Stop;
+	}
+}
+
+class LargeBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL B -1;
+			Stop;
+	}
+}
+
+class LargeGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL A -1;
+			Stop;
+	}
+}
+
+class LargeCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL R -1;
+			Stop;
+	}
+}
+
+class LargeMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL M -1;
+			Stop;
+	}
+}
+
+class LargeSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL S -1;
+			Stop;
+	}
+}
+
+class LargeIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Large Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TSCL I -1;
+			Stop;
+	}
+}
+
+// Large, Corinthian columns
+class CorinthianGreenColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Green"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL G -1;
+			Stop;
+	}
+}
+
+class CorinthianBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL B -1;
+			Stop;
+	}
+}
+
+class CorinthianGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL A -1;
+			Stop;
+	}
+}
+
+class CorinthianCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL R -1;
+			Stop;
+	}
+}
+
+class CorinthianMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL M -1;
+			Stop;
+	}
+}
+
+class CorinthianBloodColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Blood"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL S -1;
+			Stop;
+	}
+}
+
+class CorinthianIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Corinthian Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 120;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TCCL I -1;
+			Stop;
+	}
+}
+
+// Large, Spiral columns
+class SpiralGreenColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Green"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TPCL G -1;
+			Stop;
+	}
+}
+
+class SpiralBlackColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Black"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TPCL B -1;
+			Stop;
+	}
+}
+
+class SpiralGrayColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Gray"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	States
+	{
+		Spawn:
+			TPCL A -1;
+			Stop;
+	}
+}
+
+class SpiralCrimsonColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Crimson"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TPCL R -1;
+			Stop;
+	}
+}
+
+class SpiralMixColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Mix"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	States
+	{
+		Spawn:
+			TPCL M -1;
+			Stop;
+	}
+}
+
+class SpiralSandColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Sand"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	States
+	{
+		Spawn:
+			TPCL S -1;
+			Stop;
+	}
+}
+
+class SpiralIceColumn : Actor
+{
+	Default
+	{
+		//$Title "Spiral Column, Ice"
+		//$Category "Decorations/Columns"
+		Radius 16;
+		Height 72;
+		ProjectilePassHeight -16;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			TPCL I -1;
+			Stop;
+	}
+}

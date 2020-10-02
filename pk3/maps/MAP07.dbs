@@ -1,0 +1,109 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_LostBases.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	E4M1
+	{
+		defaultceiltexture = "F_SKY1";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = 5725.41f;
+		defaulttoptexture = "SNOW3";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				lightcolor = 0;
+				xscaleceiling = 1;
+				ceilingglowcolor = 0;
+				damageamount = 0;
+				xscalefloor = 1;
+				floorglowcolor = 0;
+				xpanningfloor = 1;
+				ceilingglowheight = 1;
+				yscaleceiling = 1;
+				floorglowheight = 1;
+				xpanningceiling = 1;
+				yscalefloor = 1;
+				rotationfloor = 1;
+				fadecolor = 0;
+				rotationceiling = 1;
+				lightceiling = 0;
+				ypanningfloor = 1;
+				damagetype = 2;
+				ypanningceiling = 1;
+				floor_reflect = 1;
+			}
+			
+			sidedef
+			{
+				offsetx_top = 1;
+				scalex_top = 1;
+				scalex_mid = 1;
+				scalex_bottom = 1;
+				scaley_mid = 1;
+				scaley_bottom = 1;
+				offsety_top = 1;
+				scaley_top = 1;
+				light = 0;
+				offsety_bottom = 1;
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+			}
+			
+			linedef
+			{
+				locknumber = 0;
+				alpha = 1;
+				arg0str = 2;
+				renderstyle = 2;
+			}
+			
+			thing
+			{
+				arg0str = 2;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0f;
+			backscaley = 100;
+			gridrotate = 0f;
+			backscalex = 100;
+			gridoriginx = 0f;
+			gridsize = 32f;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "SNOW3";
+		defaultfloortexture = "SNOWF_5";
+		viewpositiony = -2228.147f;
+		defaultwalltexture = "SNOW3";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 1.009469f;
+	}
+}

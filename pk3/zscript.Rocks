@@ -1,0 +1,195 @@
+class RocksA : Actor
+{
+	Default
+	{
+		//$Title "Small stones"
+		//$Category "Decorations/Rocks"
+		Radius 15;
+		Height 9;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STON A -1;
+			Stop;
+	}
+}
+	
+class RocksB : Actor
+{
+	Default
+	{
+		//$Title "Small stone"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 9;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STON B -1;
+			Stop;
+	}
+}
+
+class RocksC : Actor
+{
+	Default
+	{
+		//$Title "Small stone, thick"
+		//$Category "Decorations/Rocks"
+		Radius 15;
+		Height 9;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STON C -1;
+			Stop;
+	}
+}
+	
+class StalactiteA : Actor
+{
+	Default
+	{
+		//$Title "Stalactite, Thick"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 40;
+		+SOLID
+		+SPAWNCEILING
+		+NOGRAVITY
+	}
+	
+	States
+	{
+		Spawn:
+			STAL C -1;
+			Stop;
+	}
+}
+	
+class StalactiteB : Actor
+{
+	Default
+	{
+		//$Title "Stalactite, Multiple"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 43;
+		+SOLID
+		+SPAWNCEILING
+		+NOGRAVITY
+	}
+	
+	States
+	{
+		Spawn:
+			STAL D -1;
+			Stop;
+	}
+}
+
+class StalactiteC : Actor
+{
+	Default
+	{
+		//$Title "Stalactite, Thin"
+		//$Category "Decorations/Rocks"
+		Radius 6;
+		Height 45;
+		+SOLID
+		+SPAWNCEILING
+		+NOGRAVITY
+	}
+	
+	States
+	{
+		Spawn:
+			STAL G -1;
+			Stop;
+	}
+}
+
+class StalagmiteA : Actor
+{
+	Default
+	{
+		//$Title "Stalagmite, Thick"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 40;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STAL A -1;
+			Stop;
+	}
+}
+	
+class StalagmiteB : Actor
+{
+	Default
+	{
+		//$Title "Stalagmite, Multiple"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 40;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STAL B -1;
+			Stop;
+	}
+}
+	
+class StalagmiteC : Actor
+{
+	Default
+	{
+		//$Title "Stalagmite, Limestone Large"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 65;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STAL E -1;
+			Stop;
+	}
+}
+	
+class StalagmiteD : Actor
+{
+	Default
+	{
+		//$Title "Stalagmite, Limestone Small"
+		//$Category "Decorations/Rocks"
+		Radius 13;
+		Height 40;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			STAL F -1;
+			Stop;
+	}
+}
