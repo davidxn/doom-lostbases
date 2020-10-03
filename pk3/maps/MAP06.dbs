@@ -1,0 +1,99 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_LostBases.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP01
+	{
+		
+		resources
+		{
+		}
+		defaultfloortexture = "DIAMOND6";
+		defaultceiltexture = "METALH";
+		defaulttoptexture = "SUPP616A";
+		defaultwalltexture = "SUPP616A";
+		defaultbottomtexture = "SUPP616A";
+		custombrightness = 196;
+		customfloorheight = 0;
+		customceilheight = 128;
+		overridefloortexture = false;
+		overrideceiltexture = false;
+		overridetoptexture = false;
+		overridemiddletexture = false;
+		overridebottomtexture = false;
+		overridefloorheight = false;
+		overrideceilheight = false;
+		overridebrightness = false;
+		uselongtexturenames = false;
+		useresourcesinreadonlymode = false;
+		viewpositionx = 2016.885f;
+		viewpositiony = -904.8759f;
+		viewscale = 0.1035876f;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		grid
+		{
+			background = "";
+			backsource = 0;
+			backoffsetx = 0;
+			backoffsety = 0;
+			backscalex = 100;
+			backscaley = 100;
+			gridsize = 8f;
+			gridrotate = 0f;
+			gridoriginx = 0f;
+			gridoriginy = 0f;
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				arg0str = 2;
+				renderstyle = 2;
+				alpha = 1;
+			}
+			
+			sidedef
+			{
+				offsetx_top = 1;
+				offsety_top = 1;
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
+				scaley_top = 1;
+				scaley_bottom = 1;
+				light = 0;
+				scalex_bottom = 1;
+				scaley_mid = 1;
+				scalex_mid = 1;
+			}
+			
+			sector
+			{
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 1;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 1;
+				xscalefloor = 1;
+				yscalefloor = 1;
+				ceilingglowheight = 1;
+				ceilingglowcolor = 0;
+				lightceiling = 0;
+				floorglowheight = 1;
+				floorglowcolor = 0;
+				fadecolor = 0;
+				floor_reflect = 1;
+			}
+		}
+	}
+}

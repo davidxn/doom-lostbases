@@ -105,4 +105,81 @@ maps
 			}
 		}
 	}
+	
+	MAP02
+	{
+		defaultceiltexture = "DIAMOND6";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = 1757.979f;
+		defaulttoptexture = "DOORTRAK";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				rotationfloor = 17;
+				xscalefloor = 1;
+				ypanningceiling = 1;
+				ypanningfloor = 1;
+				xpanningceiling = 1;
+				yscalefloor = 1;
+				xpanningfloor = 1;
+				yscaleceiling = 1;
+				xscaleceiling = 1;
+				rotationceiling = 17;
+			}
+			
+			sidedef
+			{
+				offsety_bottom = 1;
+				offsetx_top = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsetx_mid = 1;
+				offsety_top = 1;
+			}
+			
+			linedef
+			{
+				arg0str = 2;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0f;
+			backscaley = 100;
+			gridrotate = 0f;
+			backscalex = 100;
+			gridoriginx = 0f;
+			gridsize = 16f;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "DOORTRAK";
+		defaultfloortexture = "HEXA02";
+		viewpositiony = -1247.911f;
+		defaultwalltexture = "DOORTRAK";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 1.339309f;
+	}
 }
