@@ -118,41 +118,8 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 1757.979f;
+		viewpositionx = 1447.632f;
 		defaulttoptexture = "DOORTRAK";
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				rotationfloor = 17;
-				xscalefloor = 1;
-				ypanningceiling = 1;
-				ypanningfloor = 1;
-				xpanningceiling = 1;
-				yscalefloor = 1;
-				xpanningfloor = 1;
-				yscaleceiling = 1;
-				xscaleceiling = 1;
-				rotationceiling = 17;
-			}
-			
-			sidedef
-			{
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_top = 1;
-			}
-			
-			linedef
-			{
-				arg0str = 2;
-			}
-		}
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
 		overridebrightness = false;
@@ -167,7 +134,7 @@ maps
 			gridrotate = 0f;
 			backscalex = 100;
 			gridoriginx = 0f;
-			gridsize = 16f;
+			gridsize = 8f;
 			background = "";
 			backoffsety = 0;
 		}
@@ -175,11 +142,68 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "DOORTRAK";
 		defaultfloortexture = "HEXA02";
-		viewpositiony = -1247.911f;
+		viewpositiony = -672.7139f;
 		defaultwalltexture = "DOORTRAK";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
 		viewscale = 1.339309f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				arg0str = 2;
+			}
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
+				offsety_mid = 1;
+				offsetx_top = 1;
+				offsety_top = 1;
+			}
+			
+			sector
+			{
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 1;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 1;
+				xscalefloor = 1;
+				yscalefloor = 1;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 152;
+				activetab = true;
+			}
+		}
 	}
 }
