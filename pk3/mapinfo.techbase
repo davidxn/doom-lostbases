@@ -110,4 +110,13 @@ DoomEdNums {
     10109 = TLamp1
 	10110 = TLamp2
     10403 = QuakeGrunt
+    
+    10020 = L50EliteArchvile
+    10021 = L50ArchdevilAltar
+	10022 = L50ArchdevilExitBeam
+    
+    10193 = HangingMarineCNoClip
+	10194 = MassivePileOGore
+    10195 = PileOBones
+  	10196 = HangingCybie
 }

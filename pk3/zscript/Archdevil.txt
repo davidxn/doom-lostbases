@@ -1,0 +1,278 @@
+/*
+------------------------------------------------------------
+	L-50 ZSCRIPT
+	Code © Lud & DavidN 2017
+	All rights reserved.
+------------------------------------------------------------
+*/
+
+class L50EliteArchvile : Archvile
+{
+	int user_charge;
+	int user_resurrections_since_last_cast;
+
+	Default
+	{
+		//$Title "Archdevil"
+		//$Category "L-50/Monsters"
+		Health 1400;
+		scale 1.5;
+		Radius 32;
+		Height 96;
+		DeathSound "Archdevil/Death";
+		+NOPAIN
+		+INVULNERABLE
+		+BOSS
+        -RANDOMIZE
+		Obituary "%o was incinerated by the Archdevil.";
+	}
+
+	States
+	{
+		Spawn:
+            DIAB A 0 NoDelay {
+                user_resurrections_since_last_cast = 7;
+            }
+        See:
+			//Stomp sounds between chase calls
+			DIAB AABB 2 A_VileChase;
+			TNT1 A 0 A_PlaySound("Archdevil/Walk", CHAN_AUTO);
+			DIAB CCDD 2 A_VileChase;
+			TNT1 A 0 A_PlaySound("Archdevil/Walk", CHAN_AUTO);
+			Loop;
+		Missile:
+			//Same as Archvile's line-of-sight attack
+            TNT1 A 0 A_Jump(32 + (user_resurrections_since_last_cast * 4), "Casting");
+			DIAB E 0 Bright A_VileStart;
+			DIAB E 10 Bright A_FaceTarget;
+			DIAB F 8 Bright A_VileTarget("L50ArchdevilFire");
+            DIAB E 5 Bright A_FaceTarget;
+            DIAB F 5 Bright A_VileTarget("L50ArchdevilFire");
+			DIAB JKLMN 8 Bright A_FaceTarget;
+			DIAB O 8 Bright A_VileAttack;
+			DIAB P 20 Bright;
+			Goto See;
+		Pain:
+			DIAB Q 5;
+			DIAB Q 5 A_Pain;
+			Goto See;
+		Heal:
+			//Move to Casting instead on a 1/4 chance, or if we've already performed a certain number of heals
+			TNT1 A 0 A_Jump(user_resurrections_since_last_cast * 8, "Casting");
+			TNT1 A 0 A_JumpIf(user_resurrections_since_last_cast >= 8, "Casting");
+			TNT1 A 0
+			{
+				//We're going to do a normal heal, so increment our heal counter
+				user_resurrections_since_last_cast++;
+			}
+			DIBR "XXX" 10 Bright;
+			Goto See;
+		Casting:
+			//Casting! Charge up the move to perform a mass resurrection.
+			TNT1 A 0 A_PlaySound("Archdevil/Chant", CHAN_AUTO, 5.0, false, 0.1);
+			DIBR "XXX" 10 Bright
+			{
+				bINVULNERABLE = FALSE;
+                A_GiveInventory("L50ArchdevilVulnerability", 1);
+				user_resurrections_since_last_cast = 0; //Reset the heal counter
+				user_charge++;
+				for (int user_i = 1; user_i <= 360; ++user_i)
+				{
+					//Spawn four circles of particles. Z-height is relative to the angle around the circle.
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 512, 0, 0 - user_i, 0, 0, 4);
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 256, 0, -360 + user_i, 0, 0, 5);
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 128, 0, 0 - user_i, 0, 0, 6);
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 32, 0,  -360 + user_i, 0, 0, 7);
+				}
+			}
+			TNT1 A 0 {
+                bINVULNERABLE = TRUE;
+                A_TakeInventory("L50ArchdevilVulnerability", 0);
+            }
+			TNT1 A 0 A_JumpIf(user_charge >= 21, "Resurrect");
+			Loop;
+		Resurrect:
+			TNT1 A 0
+			{
+				A_RadiusGive("L50Resurrector", 512, RGF_KILLED | RGF_CORPSES);
+				user_charge = 0;
+			}
+			Goto See;
+		Death:
+			DIAB Q 20
+			{
+				A_Scream();
+				ACS_NamedExecute("DieBoss");
+			}
+			DIAB R 20;
+			DIAB S 20 A_NoBlocking;
+			DIAB TUVWX 20;
+			DIAB X -1;
+	}
+}
+
+//=======================
+//	EFFECTS & ABILITIES
+//=======================
+
+class L50Resurrector : CustomInventory
+{
+	Default
+	{
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+	}
+
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_NamedExecuteWithResult("L50ResurrectionTime");
+			Stop;
+	}
+}
+
+class L50ArchdevilFire : ArchvileFire
+{
+	Default
+	{
+		Translation "160:167=176:191";
+	}
+}
+
+//=================
+//	MISCELLANEOUS
+//=================
+
+class L50ArchdevilAltar : BossBrain
+{
+	Default
+	{
+		//$Title "Archdevil Altar"
+		//$Category "L-50/Monsters"
+		-OLDRADIUSDMG
+		Radius 64;
+		Health 1500;
+		Scale 0.5;
+		Height 96;
+		PainSound "brain/pain";
+		DeathSound "brain/death";
+	}
+
+	States
+	{
+		BrainExplode:
+			Stop;
+		Spawn:
+			BBRN A -1;
+			Stop;
+		Pain:
+			BBRN B 36 A_Pain;
+			Goto Spawn;
+		Death:
+			BBRN B 0 ACS_NamedExecute("DieAltar");
+		Stop;
+	}
+}
+
+class L50ArchdevilExitBeam : Actor
+{
+	Default
+	{
+		//$Title "Archdevil Exit Beam"
+		//$Category "L-50/Maps/E1M6"
+		+FORCEYBILLBOARD
+		+BRIGHT
+		RenderStyle "Add";
+		XScale 1.0;
+		YScale 1.0;
+	}
+
+	States
+	{
+		Spawn:
+			BEAM B -1;
+			Stop;
+	}
+}
+
+class L50ArchdevilVulnerability : Inventory {
+
+}
+
+class HangingMarineCNoClip : Actor
+{
+	Default
+	{
+		//$Title "Hanging Marine, Gutted (NB)"
+		//$Category "L-50/Decorations/Gore"
+		Radius 16;
+		Height 60;
+		+NOGRAVITY
+		+SPAWNCEILING
+	}
+	
+	States
+	{
+		Spawn:
+			HMAR C -1;
+			Stop;
+	}
+}
+
+class MassivePileOGore : Actor
+{
+	Default
+	{
+		//$Title "Pile of Gore"
+		//$Category "L-50/Decorations/Gore"
+		Radius 40;
+		Height 64;
+		+SOLID
+	}
+	
+	States
+	{
+		Spawn:
+			PILE A -1;
+			Stop;
+	}
+}
+
+class PileOBones : Actor
+{
+	Default
+	{
+		//$Title "Pile of Bones"
+		//$Category "L-50/Decorations/Gore"
+		Radius 30;
+		Height 15;
+	}
+	
+	States
+	{
+		Spawn:
+			PILE B -1;
+			Stop;
+	}
+}
+
+class HangingCybie : Actor
+{
+	Default
+	{
+		//$Title "Dead Cyberdemon, Torso"
+		//$Category "L-50/Decorations/Gore"
+		Radius 32;
+		Height 100;
+		+SOLID
+		+NOGRAVITY
+		+SPAWNCEILING
+	}
+	
+	States
+	{
+		Spawn:
+			HCYB A -1;
+			Stop;
+	}
+}

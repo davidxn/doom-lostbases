@@ -1,0 +1,111 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_LostBases.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	E1M6
+	{
+		defaultwalltexture = "rock13";
+		overridemiddletexture = false;
+		defaultceiltexture = "GROUND12";
+		overrideceiltexture = false;
+		custombrightness = 196;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		viewpositiony = 537.6221f;
+		viewpositionx = 1439.895f;
+		customceilheight = 128;
+		customfloorheight = 0;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0f;
+			backscaley = 100;
+			gridrotate = 0f;
+			backscalex = 100;
+			gridoriginx = 0f;
+			gridsize = 8f;
+			background = "";
+			backoffsety = 0;
+		}
+		viewscale = 2.217803f;
+		defaulttoptexture = "rock13";
+		overridebottomtexture = false;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				rotationfloor = 1;
+				xscalefloor = 1;
+				xscaleceiling = 1;
+				ypanningceiling = 1;
+				ypanningfloor = 1;
+				lightcolor = 0;
+				yscalefloor = 1;
+				xpanningfloor = 1;
+				yscaleceiling = 1;
+				xpanningceiling = 1;
+				rotationceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsety_bottom = 1;
+				offsetx_top = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsetx_mid = 1;
+				offsety_top = 1;
+			}
+			
+			linedef
+			{
+				arg0str = 2;
+				alpha = 1;
+				renderstyle = 2;
+			}
+		}
+		useresourcesinreadonlymode = false;
+		defaultbottomtexture = "rock13";
+		
+		scriptdocuments
+		{
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				firstvisibleline = 185;
+				activetab = true;
+			}
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+		}
+		defaultfloortexture = "GROUND12";
+		overrideceilheight = false;
+		overridebrightness = false;
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+	}
+}
