@@ -111,14 +111,14 @@ maps
 		defaultceiltexture = "DIAMOND6";
 		overridefloorheight = false;
 		customfloorheight = 0;
-		uselongtexturenames = false;
+		uselongtexturenames = true;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 1447.632f;
+		viewpositionx = -496.4113f;
 		defaulttoptexture = "DOORTRAK";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -142,12 +142,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "DOORTRAK";
 		defaultfloortexture = "HEXA02";
-		viewpositiony = -672.7139f;
+		viewpositiony = -1291.127f;
 		defaultwalltexture = "DOORTRAK";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 1.339309f;
+		viewscale = 6.464586f;
 		
 		fieldtypes
 		{
@@ -155,16 +155,17 @@ maps
 			linedef
 			{
 				arg0str = 2;
+				alpha = 1;
 			}
 			
 			sidedef
 			{
-				offsetx_mid = 1;
-				offsetx_bottom = 1;
-				offsety_bottom = 1;
-				offsety_mid = 1;
 				offsetx_top = 1;
 				offsety_top = 1;
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
 			}
 			
 			sector
