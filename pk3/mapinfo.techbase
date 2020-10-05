@@ -16,7 +16,7 @@ episode MAP01
 	key = "1"
 }
 
-map MAP01 "Decayed Outpost"
+map MAP01 "Decayed Starport"
 {
     cluster = 1
 	levelnum = 1
@@ -26,7 +26,7 @@ map MAP01 "Decayed Outpost"
     lightning
 }
 
-map MAP02 "Inlets"
+map MAP02 "Hydroelectric Dam"
 {
     cluster = 1
 	levelnum = 2
