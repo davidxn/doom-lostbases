@@ -35,7 +35,7 @@ map MAP02 "Hydroelectric Dam"
 	music = ""
 }
 
-map MAP03 "Marine Lab"
+map MAP03 "Marine Laboratory"
 {
     cluster = 1
 	levelnum = 3
@@ -74,7 +74,7 @@ map MAP06 "Frozen Ascent"
 	music = ""
 }
 
-map MAP07 "Research Station"
+map MAP07 "Peak Outpost"
 {
     cluster = 1
 	levelnum = 7
@@ -88,19 +88,24 @@ map MAP08 "Cruel Stratum"
 {
 	cluster = 1
 	levelnum = 8
-	next = "EndGame1"
-	secretnext = ""
+	next = endgame
+	{
+		pic = "HELP"
+	}
+	secretnext = "MAP00"
 	par = 60
 	music = ""
+	NoIntermission
 }
 
 map MAP00 "The Slipgate Complex"
 {
 	cluster = 1
 	levelnum = 8
-	next = "MAP05"
+	next = "MAP06"
 	par = 60
 	music = ""
+	AllowJump
 }
 
 DoomEdNums {

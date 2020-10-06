@@ -15,7 +15,7 @@ class L50EliteArchvile : Archvile
 	{
 		//$Title "Archdevil"
 		//$Category "L-50/Monsters"
-		Health 1400;
+		Health 2000;
 		scale 1.5;
 		Radius 32;
 		Height 96;

@@ -108,4 +108,84 @@ maps
 		uselongtexturenames = false;
 		overridefloortexture = false;
 	}
+	
+	MAP08
+	{
+		defaultceiltexture = "GROUND12";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = -0.4740601f;
+		defaulttoptexture = "rock13";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				rotationfloor = 1;
+				xscalefloor = 1;
+				xscaleceiling = 1;
+				ypanningceiling = 1;
+				ypanningfloor = 1;
+				lightcolor = 0;
+				yscalefloor = 1;
+				xpanningfloor = 1;
+				yscaleceiling = 1;
+				xpanningceiling = 1;
+				rotationceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsety_bottom = 1;
+				offsetx_top = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsetx_mid = 1;
+				offsety_top = 1;
+			}
+			
+			linedef
+			{
+				arg0str = 2;
+				alpha = 1;
+				renderstyle = 2;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0f;
+			backscaley = 100;
+			gridrotate = 0f;
+			backscalex = 100;
+			gridoriginx = 0f;
+			gridsize = 4f;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "rock13";
+		defaultfloortexture = "GROUND12";
+		viewpositiony = -989.0344f;
+		defaultwalltexture = "rock13";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 1.598261f;
+	}
 }
