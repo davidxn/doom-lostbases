@@ -111,14 +111,14 @@ maps
 		defaultceiltexture = "DIAMOND6";
 		overridefloorheight = false;
 		customfloorheight = 0;
-		uselongtexturenames = true;
+		uselongtexturenames = false;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = -496.4113f;
+		viewpositionx = 2238.534f;
 		defaulttoptexture = "DOORTRAK";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -134,7 +134,7 @@ maps
 			gridrotate = 0f;
 			backscalex = 100;
 			gridoriginx = 0f;
-			gridsize = 8f;
+			gridsize = 16f;
 			background = "";
 			backoffsety = 0;
 		}
@@ -142,12 +142,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "DOORTRAK";
 		defaultfloortexture = "HEXA02";
-		viewpositiony = -1291.127f;
+		viewpositiony = -2323.856f;
 		defaultwalltexture = "DOORTRAK";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 6.464586f;
+		viewscale = 0.2134391f;
 		
 		fieldtypes
 		{
@@ -172,12 +172,12 @@ maps
 			{
 				xpanningceiling = 1;
 				ypanningceiling = 1;
-				rotationceiling = 1;
+				rotationceiling = 17;
 				xscaleceiling = 1;
 				yscaleceiling = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
-				rotationfloor = 1;
+				rotationfloor = 17;
 				xscalefloor = 1;
 				yscalefloor = 1;
 			}
@@ -202,7 +202,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 152;
+				caretposition = 138;
 				activetab = true;
 			}
 		}

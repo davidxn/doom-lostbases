@@ -13,9 +13,9 @@ maps
 		}
 		defaultfloortexture = "OBKMTA04";
 		defaultceiltexture = "O5DMDB01";
-		defaulttoptexture = "textures/map07/SUP308CF.png";
-		defaultwalltexture = "textures/map07/SUP308CF.png";
-		defaultbottomtexture = "textures/map07/SUP308CF.png";
+		defaulttoptexture = "OBASEJ30";
+		defaultwalltexture = "OBASEJ30";
+		defaultbottomtexture = "OBASEJ30";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = true;
 		useresourcesinreadonlymode = false;
-		viewpositionx = 874.6022f;
-		viewpositiony = -17.45028f;
-		viewscale = 0.3905672f;
+		viewpositionx = 2113.21f;
+		viewpositiony = 248.6437f;
+		viewscale = 1.450147f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -71,12 +71,12 @@ maps
 			{
 				xpanningceiling = 1;
 				ypanningceiling = 1;
-				rotationceiling = 1;
+				rotationceiling = 17;
 				xscaleceiling = 1;
 				yscaleceiling = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
-				rotationfloor = 1;
+				rotationfloor = 17;
 				xscalefloor = 1;
 				yscalefloor = 1;
 				lightcolor = 0;
@@ -102,7 +102,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 549;
+				caretposition = 967;
+				firstvisibleline = 4;
 				activetab = true;
 			}
 		}
