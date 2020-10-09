@@ -17,42 +17,8 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = -418.8844f;
+		viewpositionx = 874.078f;
 		defaulttoptexture = "BRONZE1";
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				rotationfloor = 1;
-				xscalefloor = 1;
-				ceilingglowcolor = 0;
-				ypanningceiling = 1;
-				ypanningfloor = 1;
-				xpanningceiling = 1;
-				yscalefloor = 1;
-				xpanningfloor = 1;
-				yscaleceiling = 1;
-				xscaleceiling = 1;
-				rotationceiling = 1;
-			}
-			
-			sidedef
-			{
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_top = 1;
-			}
-			
-			linedef
-			{
-				arg0str = 2;
-			}
-		}
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
 		overridebrightness = false;
@@ -74,12 +40,46 @@ maps
 		overridetoptexture = false;
 		overridebottomtexture = false;
 		defaultbottomtexture = "BRONZE1";
-		defaultfloortexture = "FLOOR0_1";
-		viewpositiony = 312.7857f;
+		defaultfloortexture = "OGYMTA04";
+		viewpositiony = 1114.498f;
 		defaultwalltexture = "BRONZE1";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 6.216824f;
+		viewscale = 1.956167f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				arg0str = 2;
+			}
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_top = 1;
+				offsetx_bottom = 1;
+				offsety_top = 1;
+				offsety_bottom = 1;
+			}
+			
+			sector
+			{
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 17;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 17;
+				xscalefloor = 1;
+				yscalefloor = 1;
+				ceilingglowcolor = 0;
+			}
+		}
 	}
 }
