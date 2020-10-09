@@ -1,0 +1,17 @@
+NoAutoStartMap
+Background LOSTMAP
+Splat wisplat
+Pointer wiurh0
+
+Spots
+{
+	MAP01 42 180
+	MAP02 98 176
+	MAP03 155 152
+	MAP04 221 198
+	MAP05 278 174
+	MAP06 242 122
+	MAP07 200 64
+	MAP08 191 24
+	MAP00 171 109
+}

@@ -8,6 +8,8 @@ defaultmap
 	NoCrouch
     lightmode = 0
 	sky1 = "OSKY31"
+    enterpic = "$INT_LOST"
+    exitpic = "$INT_LOST"
 }
 
 episode MAP01
