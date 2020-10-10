@@ -13,6 +13,9 @@ Texture	Optional	EHCOLB1  	Range	EHCOLB4  	Tics 4 Oscillate
 
 texture	SW1SHOT1 range SW1SHOT4 tics 8
 
+texture	CHEVANM1 range CHEVANM4 tics 8
+texture	CHEVANM5 range CHEVANM8 tics 8
+
 switch SW1SHOT1 on sound Switch1
 pic SW2SHOT1 tics 0
 switch SW2SHOT1 on sound Switch2
