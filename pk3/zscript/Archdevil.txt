@@ -111,6 +111,80 @@ class L50EliteArchvile : Archvile
 	}
 }
 
+class L50EliteArchvileFake : L50EliteArchvile
+{
+	States
+	{
+		Spawn:
+            DIAB A 0 NoDelay {
+                user_resurrections_since_last_cast = 8;
+            }
+        See:
+			//Stomp sounds between chase calls
+			DIAB AABB 2 A_VileChase;
+			TNT1 A 0 A_PlaySound("Archdevil/Walk", CHAN_AUTO);
+			DIAB CCDD 2 A_VileChase;
+			TNT1 A 0 A_PlaySound("Archdevil/Walk", CHAN_AUTO);
+			Loop;
+		Missile:
+			//Same as Archvile's line-of-sight attack
+            TNT1 A 0 A_JumpIf(user_resurrections_since_last_cast >= 8, "Casting");
+            TNT1 A 0 A_Jump(32, "Casting");
+			DIAB E 0 Bright A_VileStart;
+			DIAB E 10 Bright A_FaceTarget;
+			DIAB F 8 Bright A_VileTarget("L50ArchdevilFire");
+            DIAB E 5 Bright A_FaceTarget;
+            DIAB F 5 Bright A_VileTarget("L50ArchdevilFire");
+			DIAB JKLMN 8 Bright A_FaceTarget;
+			DIAB O 8 Bright A_VileAttack;
+			DIAB P 20 Bright;
+			Goto See;
+		Pain:
+			DIAB Q 5;
+			DIAB Q 5 A_Pain;
+			Goto See;
+		Heal:
+			TNT1 A 0 A_Jump(256, "Casting");
+			Goto See;
+		Casting:
+			//Casting! Charge up the move to perform a mass resurrection.
+			TNT1 A 0 A_PlaySound("Archdevil/Chant", CHAN_AUTO, 5.0, false, 0.1);
+			DIBR "XXX" 10 Bright
+			{
+				user_resurrections_since_last_cast = 0; //Reset the heal counter
+				user_charge++;
+				for (int user_i = 1; user_i <= 360; ++user_i)
+				{
+					//Spawn four circles of particles. Z-height is relative to the angle around the circle.
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 512, 0, 0 - user_i, 0, 0, 4);
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 256, 0, -360 + user_i, 0, 0, 5);
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 128, 0, 0 - user_i, 0, 0, 6);
+					A_SpawnParticle("Red", SPF_RELATIVE | SPF_FULLBRIGHT, 50, 12, user_i, 32, 0,  -360 + user_i, 0, 0, 7);
+				}
+			}
+			TNT1 A 0 A_JumpIf(user_charge >= 21, "Resurrect");
+			Loop;
+		Resurrect:
+			TNT1 A 0
+			{
+				A_RadiusGive("L50Resurrector", 512, RGF_KILLED | RGF_CORPSES);
+				user_charge = 0;
+			}
+			Goto See;
+		Death:
+			DIAB Q 20
+			{
+				A_Scream();
+				ACS_NamedExecute("DieBoss");
+			}
+			DIAB R 20;
+			DIAB S 20 A_NoBlocking;
+			DIAB TUVWX 20;
+			DIAB X -1;
+	}
+}
+
+
 //=======================
 //	EFFECTS & ABILITIES
 //=======================

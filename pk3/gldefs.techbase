@@ -46,3 +46,68 @@ object WhiteTorch {
         light WhiteTorchLight
     }
 }
+
+// Tech lamps
+pointlight TLIGHT1
+{
+    color 1.0 1.0 0.8
+    size 56
+    offset 0 72 0
+}
+
+pointlight TLIGHT2
+{
+    color 1.0 1.0 0.8
+    size 40
+    offset 0 44 0
+}
+
+object TLamp1
+{
+    frame LAMTA { light TLIGHT1 }
+}
+
+object TLamp2
+{
+    frame LAMTB { light TLIGHT2 }
+}
+
+pointlight LAMP
+{
+	color 1.0 1.0 0.8
+	size 84
+	offset 0 44 0
+	attenuate 1
+}
+
+pointlight LAMPBLUE
+{
+	color 0.7 0.7 1.0
+	size 84
+	offset 0 44 0
+	attenuate 1
+}
+
+pointlight MINELMP1
+{
+	color 0.9 0.7 0.3
+	size 100
+	offset 0 0 0
+}
+
+pointlight MINELMP2
+{
+	color 0.5 0.5 0.1
+	size 80
+	offset 0 0 0
+}
+
+object MineLamp1
+{
+    frame VLT1 { light MINELMP1 }
+}
+
+object MineLamp2
+{
+    frame VLT2 { light MINELMP2 }
+}

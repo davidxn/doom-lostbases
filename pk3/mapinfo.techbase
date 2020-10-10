@@ -121,6 +121,7 @@ DoomEdNums {
     10020 = L50EliteArchvile
     10021 = L50ArchdevilAltar
 	10022 = L50ArchdevilExitBeam
+    10023 = L50EliteArchvileFake
     
     10193 = HangingMarineCNoClip
 	10194 = MassivePileOGore
