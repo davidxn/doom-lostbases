@@ -119,7 +119,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 2282.262f;
+		viewpositionx = 2092.534f;
 		defaulttoptexture = "SNOW3";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -143,12 +143,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SNOW3";
 		defaultfloortexture = "SNOWF_5";
-		viewpositiony = -229.1731f;
+		viewpositiony = 1497.269f;
 		defaultwalltexture = "SNOW3";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 0.2206487f;
+		viewscale = 0.819253f;
 		
 		fieldtypes
 		{
@@ -181,12 +181,12 @@ maps
 			sector
 			{
 				fadecolor = 0;
-				rotationfloor = 17;
+				rotationfloor = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
 				xpanningceiling = 1;
 				ypanningceiling = 1;
-				rotationceiling = 17;
+				rotationceiling = 1;
 				xscaleceiling = 1;
 				yscaleceiling = 1;
 				xscalefloor = 1;
