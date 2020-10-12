@@ -119,7 +119,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 2092.534f;
+		viewpositionx = 1780.048f;
 		defaulttoptexture = "SNOW3";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -143,12 +143,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SNOW3";
 		defaultfloortexture = "SNOWF_5";
-		viewpositiony = 1497.269f;
+		viewpositiony = 13.67569f;
 		defaultwalltexture = "SNOW3";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 0.819253f;
+		viewscale = 0.4847651f;
 		
 		fieldtypes
 		{
