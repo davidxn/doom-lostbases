@@ -17,7 +17,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 886.5673f;
+		viewpositionx = 16.38846f;
 		defaulttoptexture = "SLADWALL";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -41,12 +41,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SLADWALL";
 		defaultfloortexture = "NUKAGE1";
-		viewpositiony = -785.0144f;
+		viewpositiony = -686.8408f;
 		defaultwalltexture = "SLADWALL";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 3.013854f;
+		viewscale = 0.6654155f;
 		
 		fieldtypes
 		{
