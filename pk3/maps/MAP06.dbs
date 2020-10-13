@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -993.9661f;
-		viewpositiony = 3059.518f;
-		viewscale = 0.2958535f;
+		viewpositionx = 2042.626f;
+		viewpositiony = -2442.257f;
+		viewscale = 0.1655458f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -42,7 +42,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 4f;
+			gridsize = 8f;
 			gridrotate = 0f;
 			gridoriginx = 0f;
 			gridoriginy = 0f;
@@ -53,9 +53,9 @@ maps
 			
 			linedef
 			{
-				arg0str = 2;
 				renderstyle = 2;
 				alpha = 1;
+				arg0str = 2;
 			}
 			
 			sidedef
@@ -66,9 +66,9 @@ maps
 				offsety_mid = 1;
 				offsetx_bottom = 1;
 				offsety_bottom = 1;
+				light = 0;
 				scaley_top = 1;
 				scaley_bottom = 1;
-				light = 0;
 				scalex_bottom = 1;
 				scaley_mid = 1;
 				scalex_mid = 1;
@@ -78,21 +78,21 @@ maps
 			{
 				xpanningceiling = 1;
 				ypanningceiling = 1;
-				rotationceiling = 1;
+				rotationceiling = 17;
 				xscaleceiling = 1;
 				yscaleceiling = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
-				rotationfloor = 1;
+				rotationfloor = 17;
 				xscalefloor = 1;
 				yscalefloor = 1;
 				ceilingglowheight = 1;
 				ceilingglowcolor = 0;
 				lightceiling = 0;
-				floorglowheight = 1;
-				floorglowcolor = 0;
 				fadecolor = 0;
 				floor_reflect = 1;
+				floorglowheight = 1;
+				floorglowcolor = 0;
 				lightcolor = 0;
 			}
 		}
@@ -116,9 +116,102 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 56;
+				caretposition = 79;
 				activetab = true;
 			}
 		}
+	}
+	
+	MAP06
+	{
+		defaultceiltexture = "METALH";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = -2042.233f;
+		defaulttoptexture = "SUPP616A";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				lightcolor = 0;
+				xscaleceiling = 1;
+				ceilingglowcolor = 0;
+				floor_reflect = 1;
+				xscalefloor = 1;
+				floorglowcolor = 0;
+				xpanningfloor = 1;
+				ceilingglowheight = 1;
+				yscaleceiling = 1;
+				floorglowheight = 1;
+				xpanningceiling = 1;
+				yscalefloor = 1;
+				rotationfloor = 1;
+				fadecolor = 0;
+				rotationceiling = 1;
+				lightceiling = 0;
+				ypanningfloor = 1;
+				ypanningceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsetx_top = 1;
+				scalex_mid = 1;
+				scalex_bottom = 1;
+				scaley_mid = 1;
+				scaley_bottom = 1;
+				offsety_top = 1;
+				scaley_top = 1;
+				light = 0;
+				offsety_bottom = 1;
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+			}
+			
+			linedef
+			{
+				arg0str = 2;
+				alpha = 1;
+				renderstyle = 2;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0f;
+			backscaley = 100;
+			gridrotate = 0f;
+			backscalex = 100;
+			gridoriginx = 0f;
+			gridsize = 8f;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "SUPP616A";
+		defaultfloortexture = "DIAMOND6";
+		viewpositiony = 1185.307f;
+		defaultwalltexture = "SUPP616A";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 2.239144f;
 	}
 }

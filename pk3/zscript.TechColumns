@@ -40,6 +40,7 @@ class TechColumnYellow : Actor
 class TechColumnBlue : TechColumnYellow
 {
     Default {
+		//$Title "Tech Column Blue"
         Translation "160:167=196:207", "224:231=192:198";
     }
 }

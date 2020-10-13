@@ -74,6 +74,7 @@ map MAP06 "Frozen Ascent"
 	secretnext = ""
 	par = 60
 	music = ""
+	sky2 = "OSKY31W"
 }
 
 map MAP07 "Peak Outpost"
@@ -84,6 +85,7 @@ map MAP07 "Peak Outpost"
 	secretnext = "MAP10"
 	par = 60
 	music = ""
+	sky1 = "OSKY31W"
 }
 
 map MAP08 "Cruel Stratum"
