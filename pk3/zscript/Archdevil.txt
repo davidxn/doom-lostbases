@@ -128,8 +128,6 @@ class L50EliteArchvileFake : L50EliteArchvile
 			Loop;
 		Missile:
 			//Same as Archvile's line-of-sight attack
-            TNT1 A 0 A_JumpIf(user_resurrections_since_last_cast >= 8, "Casting");
-            TNT1 A 0 A_Jump(32, "Casting");
 			DIAB E 0 Bright A_VileStart;
 			DIAB E 10 Bright A_FaceTarget;
 			DIAB F 8 Bright A_VileTarget("L50ArchdevilFire");

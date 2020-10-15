@@ -27,11 +27,11 @@ maps
 		overridefloorheight = false;
 		overrideceilheight = false;
 		overridebrightness = false;
-		uselongtexturenames = true;
+		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = 1715.857f;
-		viewpositiony = 442.5327f;
-		viewscale = 0.4052704f;
+		viewpositionx = 2499.5f;
+		viewpositiony = 316.7613f;
+		viewscale = 0.7491162f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -42,10 +42,10 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 8f;
-			gridrotate = 0f;
-			gridoriginx = 0f;
-			gridoriginy = 0f;
+			gridsize = 8;
+			gridrotate = 0;
+			gridoriginx = 0;
+			gridoriginy = 0;
 		}
 		
 		fieldtypes
@@ -66,6 +66,7 @@ maps
 				offsetx_bottom = 1;
 				offsety_bottom = 1;
 				offsety_mid = 1;
+				scaley_mid = 1;
 			}
 			
 			sector
@@ -103,8 +104,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 1456;
-				firstvisibleline = 23;
+				caretposition = 1772;
+				firstvisibleline = 55;
 				activetab = true;
 			}
 		}
