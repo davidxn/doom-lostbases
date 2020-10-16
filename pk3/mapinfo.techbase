@@ -129,4 +129,9 @@ DoomEdNums {
 	10194 = MassivePileOGore
     10195 = PileOBones
   	10196 = HangingCybie
+	
+	10200 = WinterA
+	10201 = WinterB
+	10202 = WinterE
+		
 }

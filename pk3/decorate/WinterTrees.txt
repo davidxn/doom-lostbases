@@ -1,0 +1,44 @@
+ACTOR winterA 
+{
+  //$Title "Winter Tree A"
+  Game Doom
+  Radius 20
+  Height 115
+  +SOLID
+  States
+  {
+  Spawn:
+    WINT A -1
+    Stop
+  }
+}
+
+ACTOR winterB
+{
+  //$Title "Winter Tree B"
+  Game Doom
+  Radius 15
+  Height 90
+  +SOLID
+  States
+  {
+  Spawn:
+    WINT B -1
+    Stop
+  }
+}
+
+ACTOR winterE 
+{
+  //$Title "Winter Tree E"
+  Game Doom
+  Radius 10
+  Height 45
+  +SOLID
+  States
+  {
+  Spawn:
+    WINT E -1
+    Stop
+  }
+}

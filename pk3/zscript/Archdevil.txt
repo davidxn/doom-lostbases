@@ -142,7 +142,7 @@ class L50EliteArchvileFake : L50EliteArchvile
 			DIAB Q 5 A_Pain;
 			Goto See;
 		Heal:
-			TNT1 A 0 A_Jump(256, "Casting");
+			DIBR "XXX" 10 Bright;
 			Goto See;
 		Casting:
 			//Casting! Charge up the move to perform a mass resurrection.
