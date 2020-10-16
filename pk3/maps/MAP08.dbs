@@ -121,44 +121,8 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = -0.4740601f;
+		viewpositionx = -316.2949f;
 		defaulttoptexture = "rock13";
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				rotationfloor = 1;
-				xscalefloor = 1;
-				xscaleceiling = 1;
-				ypanningceiling = 1;
-				ypanningfloor = 1;
-				lightcolor = 0;
-				yscalefloor = 1;
-				xpanningfloor = 1;
-				yscaleceiling = 1;
-				xpanningceiling = 1;
-				rotationceiling = 1;
-			}
-			
-			sidedef
-			{
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_top = 1;
-			}
-			
-			linedef
-			{
-				arg0str = 2;
-				alpha = 1;
-				renderstyle = 2;
-			}
-		}
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
 		overridebrightness = false;
@@ -168,12 +132,12 @@ maps
 		{
 			backoffsetx = 0;
 			backsource = 0;
-			gridoriginy = 0f;
+			gridoriginy = 0;
 			backscaley = 100;
-			gridrotate = 0f;
+			gridrotate = 0;
 			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 4f;
+			gridoriginx = 0;
+			gridsize = 2;
 			background = "";
 			backoffsety = 0;
 		}
@@ -181,11 +145,47 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "rock13";
 		defaultfloortexture = "GROUND12";
-		viewpositiony = -989.0344f;
+		viewpositiony = 1283.458f;
 		defaultwalltexture = "rock13";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 1.598261f;
+		viewscale = 7.714497f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				renderstyle = 2;
+				alpha = 1;
+				arg0str = 2;
+			}
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_top = 1;
+				offsety_top = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
+			}
+			
+			sector
+			{
+				lightcolor = 0;
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 1;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 1;
+				xscalefloor = 1;
+				yscalefloor = 1;
+			}
+		}
 	}
 }
