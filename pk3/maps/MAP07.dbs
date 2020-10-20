@@ -119,7 +119,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 1780.048f;
+		viewpositionx = 1124.867f;
 		defaulttoptexture = "SNOW3";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -130,12 +130,12 @@ maps
 		{
 			backoffsetx = 0;
 			backsource = 0;
-			gridoriginy = 0f;
+			gridoriginy = 0;
 			backscaley = 100;
-			gridrotate = 0f;
+			gridrotate = 0;
 			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 16f;
+			gridoriginx = 0;
+			gridsize = 4;
 			background = "";
 			backoffsety = 0;
 		}
@@ -143,12 +143,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SNOW3";
 		defaultfloortexture = "SNOWF_5";
-		viewpositiony = 13.67569f;
+		viewpositiony = 2246.195f;
 		defaultwalltexture = "SNOW3";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 0.4847651f;
+		viewscale = 2.568412f;
 		
 		fieldtypes
 		{
@@ -156,9 +156,9 @@ maps
 			linedef
 			{
 				alpha = 1;
-				arg0str = 2;
 				locknumber = 0;
 				renderstyle = 2;
+				arg0str = 2;
 			}
 			
 			sidedef
@@ -180,7 +180,6 @@ maps
 			
 			sector
 			{
-				fadecolor = 0;
 				rotationfloor = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
@@ -194,8 +193,6 @@ maps
 				ceilingglowheight = 1;
 				ceilingglowcolor = 0;
 				lightceiling = 0;
-				damagetype = 2;
-				damageamount = 0;
 				floorglowheight = 1;
 				floorglowcolor = 0;
 				lightcolor = 0;
@@ -204,6 +201,31 @@ maps
 			thing
 			{
 				arg0str = 2;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 1235;
+				firstvisibleline = 23;
+				activetab = true;
 			}
 		}
 	}

@@ -133,5 +133,7 @@ DoomEdNums {
 	10200 = WinterA
 	10201 = WinterB
 	10202 = WinterE
+	
+	10300 = SupportChain
 		
 }

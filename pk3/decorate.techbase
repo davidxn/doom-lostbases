@@ -16,3 +16,13 @@ actor QuakeGrunt : ShotgunGuy
             Goto See
     }
 }
+
+actor SupportChain
+{
+	Radius 16
+	States {
+		Spawn:
+			CHAN A -1
+			Loop
+	}
+}
