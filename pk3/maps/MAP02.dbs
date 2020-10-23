@@ -118,7 +118,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 2857.937f;
+		viewpositionx = 1188.669f;
 		defaulttoptexture = "DOORTRAK";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -142,12 +142,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "DOORTRAK";
 		defaultfloortexture = "HEXA02";
-		viewpositiony = -1616.08f;
+		viewpositiony = -2858.93f;
 		defaultwalltexture = "DOORTRAK";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 1.030228f;
+		viewscale = 2.263411f;
 		
 		fieldtypes
 		{
@@ -202,7 +202,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 138;
+				caretposition = 48;
 				activetab = true;
 			}
 		}

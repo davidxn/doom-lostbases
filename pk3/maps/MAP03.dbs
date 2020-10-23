@@ -95,8 +95,8 @@ maps
 		resources
 		{
 		}
-		viewpositiony = 304.6601f;
-		viewpositionx = 331.1532f;
+		viewpositiony = 1918.036f;
+		viewpositionx = -442.6911f;
 		customceilheight = 128;
 		customfloorheight = 0;
 		
@@ -104,16 +104,16 @@ maps
 		{
 			backoffsetx = 0;
 			backsource = 0;
-			gridoriginy = 0f;
+			gridoriginy = 0;
 			backscaley = 100;
-			gridrotate = 0f;
+			gridrotate = 0;
 			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 8f;
+			gridoriginx = 0;
+			gridsize = 4;
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 0.8650408f;
+		viewscale = 3.668771f;
 		defaulttoptexture = "TEKGREN5";
 		overridebottomtexture = false;
 		useresourcesinreadonlymode = false;

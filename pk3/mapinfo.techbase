@@ -92,11 +92,8 @@ map MAP08 "Cruel Stratum"
 {
 	cluster = 1
 	levelnum = 8
-	next = endgame
-	{
-		pic = "HELP"
-	}
-	secretnext = "MAP00"
+	next = "ENDMAP1"
+	secretnext = "ENDMAP2"
 	par = 60
 	music = "J_SPIRIT"
 	NoIntermission
