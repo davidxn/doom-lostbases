@@ -24,7 +24,7 @@ map MAP01 "Decayed Starport"
 	levelnum = 1
 	next = "MAP02"
 	par = 60
-	music = "DN_GROOV"
+	music = "M_ALBION"
     lightning
 }
 
@@ -44,7 +44,7 @@ map MAP03 "Marine Laboratory"
 	next = "MAP04"
 	secretnext = ""
 	par = 60
-	music = ""
+	music = "M_UNDERH"
 }
 
 map MAP04 "Slime Factory"
@@ -84,7 +84,7 @@ map MAP07 "Peak Outpost"
 	next = "MAP08"
 	secretnext = "MAP10"
 	par = 60
-	music = ""
+	music = "J_TROGLO"
 	sky1 = "OSKY31W"
 }
 
@@ -98,7 +98,7 @@ map MAP08 "Cruel Stratum"
 	}
 	secretnext = "MAP00"
 	par = 60
-	music = ""
+	music = "J_SPIRIT"
 	NoIntermission
 }
 
@@ -110,6 +110,11 @@ map MAP00 "The Slipgate Complex"
 	par = 60
 	music = ""
 	AllowJump
+}
+
+map TITLEMAP "Ascent of Titan"
+{
+	music = "M_TITAN"
 }
 
 DoomEdNums {

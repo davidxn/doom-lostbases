@@ -40,3 +40,12 @@ switch SW1TKTAN on sound Switch1
 pic SW2TKTAN tics 0
 switch SW2TKTAN on sound Switch2
 pic SW1TKTAN tics 0
+
+switch SW1GOTH on sound Switch1
+pic SW2GOTH tics 0
+switch SW2GOTH on sound Switch2
+pic SW1GOTH tics 0
+
+Texture Optional LAVFALL1 Range LAVFALL4 Tics 8
+Texture Optional OMETLC92 Range OMETLC95 Tics 8
+Texture Optional COMPFUZ1 Range COMPFUZ4 Tics 8

@@ -1,0 +1,111 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_LostBases.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP00
+	{
+		defaultwalltexture = "textures/qe1m1/tech08_1.png";
+		overridemiddletexture = false;
+		defaultceiltexture = "textures/qe1m1/tech01_1.png";
+		overrideceiltexture = false;
+		custombrightness = 196;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+		}
+		viewpositiony = 743.2229f;
+		viewpositionx = 1596.638f;
+		customceilheight = 128;
+		customfloorheight = 0;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 2;
+			background = "";
+			backoffsety = 0;
+		}
+		viewscale = 5.239593f;
+		defaulttoptexture = "textures/qe1m1/tech08_1.png";
+		overridebottomtexture = false;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				xscaleceiling = 1;
+				damageamount = 0;
+				xscalefloor = 1;
+				xpanningfloor = 1;
+				yscaleceiling = 1;
+				lightcolor = 0;
+				xpanningceiling = 1;
+				yscalefloor = 1;
+				rotationfloor = 1;
+				rotationceiling = 1;
+				damagetype = 2;
+				ypanningfloor = 1;
+				ypanningceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsety_bottom = 1;
+				offsetx_top = 1;
+				offsety_mid = 1;
+				offsetx_bottom = 1;
+				offsetx_mid = 1;
+				offsety_top = 1;
+			}
+			
+			linedef
+			{
+				arg0str = 2;
+			}
+		}
+		useresourcesinreadonlymode = false;
+		defaultbottomtexture = "textures/qe1m1/tech08_1.png";
+		
+		scriptdocuments
+		{
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				firstvisibleline = 7;
+				activetab = true;
+			}
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+		}
+		defaultfloortexture = "textures/qe1m1/sfloor4_2.png";
+		overrideceilheight = false;
+		overridebrightness = false;
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+	}
+}
