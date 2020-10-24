@@ -17,8 +17,8 @@ maps
 		resources
 		{
 		}
-		viewpositiony = 743.2229f;
-		viewpositionx = 1596.638f;
+		viewpositiony = -1467.682f;
+		viewpositionx = 979.6578f;
 		customceilheight = 128;
 		customfloorheight = 0;
 		
@@ -35,52 +35,59 @@ maps
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 5.239593f;
+		viewscale = 1.834527f;
 		defaulttoptexture = "textures/qe1m1/tech08_1.png";
 		overridebottomtexture = false;
+		useresourcesinreadonlymode = false;
+		defaultbottomtexture = "textures/qe1m1/tech08_1.png";
+		defaultfloortexture = "textures/qe1m1/sfloor4_2.png";
+		overrideceilheight = false;
+		overridebrightness = false;
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
 		
 		fieldtypes
 		{
-			
-			sector
-			{
-				xscaleceiling = 1;
-				damageamount = 0;
-				xscalefloor = 1;
-				xpanningfloor = 1;
-				yscaleceiling = 1;
-				lightcolor = 0;
-				xpanningceiling = 1;
-				yscalefloor = 1;
-				rotationfloor = 1;
-				rotationceiling = 1;
-				damagetype = 2;
-				ypanningfloor = 1;
-				ypanningceiling = 1;
-			}
-			
-			sidedef
-			{
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_top = 1;
-			}
 			
 			linedef
 			{
 				arg0str = 2;
 			}
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				offsetx_top = 1;
+				offsety_top = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
+			}
+			
+			sector
+			{
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 1;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 1;
+				xscalefloor = 1;
+				yscalefloor = 1;
+				damagetype = 2;
+				damageamount = 0;
+				lightcolor = 0;
+			}
 		}
-		useresourcesinreadonlymode = false;
-		defaultbottomtexture = "textures/qe1m1/tech08_1.png";
 		
 		scriptdocuments
 		{
 			
-			document1
+			document0
 			{
 				filename = "SCRIPTS";
 				hash = 3469170009;
@@ -91,7 +98,7 @@ maps
 				activetab = true;
 			}
 			
-			document0
+			document1
 			{
 				filename = "DIALOGUE";
 				hash = 3588187714;
@@ -100,12 +107,5 @@ maps
 				scripttype = 18;
 			}
 		}
-		defaultfloortexture = "textures/qe1m1/sfloor4_2.png";
-		overrideceilheight = false;
-		overridebrightness = false;
-		overridefloorheight = false;
-		overridetoptexture = false;
-		uselongtexturenames = false;
-		overridefloortexture = false;
 	}
 }

@@ -134,7 +134,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 842.3521f;
+		viewpositionx = 521.3425f;
 		defaulttoptexture = "SUPP616A";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -158,12 +158,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SUPP616A";
 		defaultfloortexture = "DIAMOND6";
-		viewpositiony = -3883.038f;
+		viewpositiony = -4284.213f;
 		defaultwalltexture = "SUPP616A";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 0.547464f;
+		viewscale = 4.465831f;
 		
 		fieldtypes
 		{

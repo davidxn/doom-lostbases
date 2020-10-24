@@ -95,8 +95,8 @@ maps
 		resources
 		{
 		}
-		viewpositiony = 1918.036f;
-		viewpositionx = -442.6911f;
+		viewpositiony = 89.49451f;
+		viewpositionx = 106.6856f;
 		customceilheight = 128;
 		customfloorheight = 0;
 		
@@ -160,7 +160,6 @@ maps
 				xscalefloor = 1;
 				yscalefloor = 1;
 				lightcolor = 0;
-				desaturation = 1;
 				floor_reflect = 1;
 				lightceiling = 0;
 			}

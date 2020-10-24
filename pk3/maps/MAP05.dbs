@@ -11,7 +11,7 @@ maps
 		resources
 		{
 		}
-		defaultfloortexture = "OBKMTA04";
+		defaultfloortexture = "textures/map07/HEXAMIN1.png";
 		defaultceiltexture = "O5DMDB01";
 		defaulttoptexture = "OBASEJ30";
 		defaultwalltexture = "OBASEJ30";
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = 2547.221f;
-		viewpositiony = 2764.222f;
-		viewscale = 0.2017587f;
+		viewpositionx = 1136.23f;
+		viewpositiony = -431.9123f;
+		viewscale = 1.6699f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid

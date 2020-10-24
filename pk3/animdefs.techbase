@@ -5,47 +5,34 @@ switch QSW1TEK1 on sound Switch1 pic QSW2TEK1 tics 0
 switch QSW1TARG on sound Switch1 pic QSW2TARG tics 0
 switch QSW1BAS1 on sound Switch1 pic QSW2BAS1 tics 0
 
+switch SW1SHOT1 on sound Switch1 pic SW2SHOT1 tics 0
+switch SW2SHOT1 on sound Switch2 pic SW1SHOT1 tics 0
+
+switch SW1MEGA on sound Switch1 pic SW2MEGA tics 0
+switch SW2MEGA on sound Switch2 pic SW1MEGA tics 0
+
+switch SW1DUKE on sound Switch1 pic SW2DUKE tics 0
+switch SW2DUKE on sound Switch2 pic SW1DUKE tics 0
+
+switch SW1ALLSL on sound Switch1 pic SW2ALLSL tics 0
+switch SW2ALLSL on sound Switch2 pic SW1ALLSL tics 0
+
+switch SW1TKTAN on sound Switch1 pic SW2TKTAN tics 0
+switch SW2TKTAN on sound Switch2 pic SW1TKTAN tics 0
+
+switch SW1GOTH on sound Switch1 pic SW2GOTH tics 0
+switch SW2GOTH on sound Switch2 pic SW1GOTH tics 0
+
 texture QSW1BAS1
     pic QSW1BAS1 tics 8
     pic QSW1BAS2 tics 8
-
-Texture	Optional	EHCOLB1  	Range	EHCOLB4  	Tics 4 Oscillate
 
 texture	SW1SHOT1 range SW1SHOT4 tics 8
 
 texture	CHEVANM1 range CHEVANM4 tics 8
 texture	CHEVANM5 range CHEVANM8 tics 8
-
-switch SW1SHOT1 on sound Switch1
-pic SW2SHOT1 tics 0
-switch SW2SHOT1 on sound Switch2
-pic SW1SHOT1 tics 0
-
-switch SW1MEGA on sound Switch1
-pic SW2MEGA tics 0
-switch SW2MEGA on sound Switch2
-pic SW1MEGA tics 0
-
-switch SW1DUKE on sound Switch1
-pic SW2DUKE tics 0
-switch SW2DUKE on sound Switch2
-pic SW1DUKE tics 0
-
-switch SW1ALLSL on sound Switch1
-pic SW2ALLSL tics 0
-switch SW2ALLSL on sound Switch2
-pic SW1ALLSL tics 0
-
-switch SW1TKTAN on sound Switch1
-pic SW2TKTAN tics 0
-switch SW2TKTAN on sound Switch2
-pic SW1TKTAN tics 0
-
-switch SW1GOTH on sound Switch1
-pic SW2GOTH tics 0
-switch SW2GOTH on sound Switch2
-pic SW1GOTH tics 0
-
+Texture	Optional	EHCOLB1  	Range	EHCOLB4  	Tics 4 Oscillate
 Texture Optional LAVFALL1 Range LAVFALL4 Tics 8
 Texture Optional OMETLC92 Range OMETLC95 Tics 8
 Texture Optional COMPFUZ1 Range COMPFUZ4 Tics 8
+Flat Optional OWARPD01 Range OWARPD08 Tics 4
