@@ -134,7 +134,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 521.3425f;
+		viewpositionx = 914.9761f;
 		defaulttoptexture = "SUPP616A";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -158,21 +158,21 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SUPP616A";
 		defaultfloortexture = "DIAMOND6";
-		viewpositiony = -4284.213f;
+		viewpositiony = -2850.377f;
 		defaultwalltexture = "SUPP616A";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 4.465831f;
+		viewscale = 0.9404652f;
 		
 		fieldtypes
 		{
 			
 			linedef
 			{
+				arg0str = 2;
 				renderstyle = 2;
 				alpha = 1;
-				arg0str = 2;
 			}
 			
 			sidedef
@@ -210,6 +210,30 @@ maps
 				floorglowheight = 1;
 				floorglowcolor = 0;
 				lightcolor = 0;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 817;
+				activetab = true;
 			}
 		}
 	}

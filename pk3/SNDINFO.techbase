@@ -2,3 +2,9 @@ Archdevil/Walk DSADVWLK
 Archdevil/Death DSADVDTH
 Archdevil/Chant DSADVREV
 Archdevil/Pentagram DSADVSTR
+
+qgrunt/sight		"sounds/grunt/grunt-sight.wav"
+qgrunt/attack		"sounds/grunt/grunt-attack.wav"
+qgrunt/pain			"sounds/grunt/grunt-pain.wav"
+qgrunt/death		"sounds/grunt/grunt-death.wav"
+qgrunt/active		"sounds/grunt/grunt-active.wav"

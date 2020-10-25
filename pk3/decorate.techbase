@@ -3,17 +3,52 @@
 
 actor QuakeGrunt : ShotgunGuy
 {
+    SeeSound "qgrunt/sight"
+    AttackSound "qgrunt/attack"
+    PainSound "qgrunt/pain"
+    DeathSound "qgrunt/death"
+    ActiveSound "qgrunt/active"
     Translation "96:111=112:127", "32:47=121:127"
     Health 80
-    Speed 3
-    PainChance 250
-    States {
-        Missile:
-            SPOS E 10 A_FaceTarget
-            SPOS F 0 bright A_PlaySound("shotguy/attack", CHAN_WEAPON)
-            SPOS F 10 bright A_CustomBulletAttack(22.5, 0, 3, random(1,4)*3, "BulletPuff", 0, CBAF_NORANDOM)
-            SPOS E 10
-            Goto See
+    Speed 6
+    PainChance 200
+    Obituary "%o was shot by a Grunt."
+    States
+	{
+		Spawn:
+			GRNT AB 10 A_Look
+			Loop
+		See:
+			GRNT AABBCCDD 3 A_Chase
+			Loop
+		Missile:
+			GRNT E 10 A_FaceTarget
+			GRNT F 0 bright A_PlaySound("qgrunt/attack", CHAN_WEAPON)
+			GRNT F 10 bright A_CustomBulletAttack(22.5, 0, 3, random(1,4)*3, "BulletPuff", 0, CBAF_NORANDOM)
+			GRNT E 10
+			Goto See
+		Pain:
+			GRNT G 3
+			GRNT G 3 A_Pain
+			Goto See
+		Death:
+			GRNT H 5
+			GRNT I 5 A_Scream
+			GRNT J 5 A_NoBlocking
+			GRNT K 5
+			GRNT L -1
+			Stop
+		XDeath:
+			GRNT M 5
+			GRNT N 5 A_XScream
+			GRNT O 5 A_NoBlocking
+			GRNT PQRST 5
+			GRNT U -1
+			Stop
+		Raise:
+			GRNT L 5
+			GRNT KJIH 5
+			Goto See
     }
 }
 

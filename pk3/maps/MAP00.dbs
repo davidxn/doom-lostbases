@@ -17,8 +17,8 @@ maps
 		resources
 		{
 		}
-		viewpositiony = -1467.682f;
-		viewpositionx = 979.6578f;
+		viewpositiony = -1435.944f;
+		viewpositionx = 639.5706f;
 		customceilheight = 128;
 		customfloorheight = 0;
 		
@@ -35,7 +35,7 @@ maps
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 1.834527f;
+		viewscale = 1.956168f;
 		defaulttoptexture = "textures/qe1m1/tech08_1.png";
 		overridebottomtexture = false;
 		useresourcesinreadonlymode = false;
@@ -89,22 +89,23 @@ maps
 			
 			document0
 			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				firstvisibleline = 7;
-				activetab = true;
-			}
-			
-			document1
-			{
 				filename = "DIALOGUE";
 				hash = 3588187714;
 				resource;
 				tabtype = 0;
 				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 773;
+				firstvisibleline = 2;
+				activetab = true;
 			}
 		}
 	}

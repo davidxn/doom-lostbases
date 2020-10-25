@@ -13,9 +13,9 @@ maps
 		}
 		defaultfloortexture = "ALLBLACK";
 		defaultceiltexture = "ALLBLACK";
-		defaulttoptexture = "TITLBG";
-		defaultwalltexture = "TITLBG";
-		defaultbottomtexture = "TITLBG";
+		defaulttoptexture = "OROCKP04";
+		defaultwalltexture = "OROCKP04";
+		defaultbottomtexture = "OROCKP04";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -29,9 +29,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = false;
-		viewpositionx = -113.2849f;
-		viewpositiony = 1436.624f;
-		viewscale = 0.1750635f;
+		viewpositionx = 435.5888f;
+		viewpositiony = -170.3172f;
+		viewscale = 4.078642f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -42,7 +42,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 8;
+			gridsize = 2;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -51,12 +51,60 @@ maps
 		fieldtypes
 		{
 			
+			linedef
+			{
+				renderstyle = 2;
+				alpha = 1;
+				arg0str = 2;
+			}
+			
 			sidedef
 			{
 				offsetx_mid = 1;
 				offsety_mid = 1;
-				scalex_mid = 1;
-				scaley_mid = 1;
+				offsetx_top = 1;
+				offsetx_bottom = 1;
+				offsety_top = 1;
+				offsety_bottom = 1;
+			}
+			
+			sector
+			{
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 17;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 17;
+				xscalefloor = 1;
+				yscalefloor = 1;
+				lightcolor = 0;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 225;
+				activetab = true;
 			}
 		}
 	}

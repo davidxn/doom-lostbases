@@ -34,7 +34,7 @@ map MAP02 "Hydroelectric Dam"
 	levelnum = 2
 	next = "MAP03"
 	par = 60
-	music = ""
+	music = "J_PIPELN"
 }
 
 map MAP03 "Marine Laboratory"
@@ -53,7 +53,7 @@ map MAP04 "Slime Factory"
 	levelnum = 4
 	next = "MAP05"
 	par = 60
-	music = ""
+	music = "J_TRILEM"
 }
 
 map MAP05 "Transporter Facility"
@@ -63,7 +63,7 @@ map MAP05 "Transporter Facility"
 	next = "MAP06"
 	secretnext = "MAP00"
 	par = 60
-	music = ""
+	music = "J_RUSTYN"
 }
 
 map MAP06 "Frozen Ascent"
@@ -73,7 +73,7 @@ map MAP06 "Frozen Ascent"
 	next = "MAP07"
 	secretnext = ""
 	par = 60
-	music = ""
+	music = "J_DESPER"
 	sky2 = "OSKY31W"
 }
 
@@ -105,13 +105,26 @@ map MAP00 "The Slipgate Complex"
 	levelnum = 8
 	next = "MAP06"
 	par = 60
-	music = ""
+	music = "M_SLIPGA"
 	AllowJump
 }
 
 map TITLEMAP "Ascent of Titan"
 {
 	music = "M_TITAN"
+}
+
+map ENDMAP1 "Bad Ending"
+{
+	music = "M_END1"
+	next = "MAP08"
+	NoIntermission
+}
+
+map ENDMAP2 "Good Ending"
+{
+	music = "M_END2"
+	NoIntermission
 }
 
 DoomEdNums {

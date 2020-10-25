@@ -1,0 +1,31 @@
+"Ascent of Titan" by DavidN @DavidXNewton
+Compiled for NanoWADMo 2020
+Pulled together from contributions to community projects that never made it!
+
+Additional work on MAP06 and MAP07 by BillGuy
+Additional code on MAP08 by Accensus
+
+Textures
+--------
+
+Jimmytex
+CC4TEX
+OTEX textures by Ola Björling (ukiro)
+
+Image of Saturn on title screen
+By NASA / JPL / Space Science Institute - http://www.ciclops.org/view/5155/Saturn-Four-Years-On http://www.nasa.gov/images/content/365640main_PIA11141_full.jpg http://photojournal.jpl.nasa.gov/catalog/PIA11141, Public Domain, https://commons.wikimedia.org/w/index.php?curid=7228953
+
+Music
+-----
+
+Title and intermission music    DavidN
+
+MAP01 At Albion's Gate          DavidN
+MAP02 Pipeline                  Jimmy
+MAP03 Underhell                 DavidN
+MAP04 Trilemma                  Jimmy
+MAP05 Rusty Nails               Jimmy
+MAP06 Desperate Intruder        Jimmy
+MAP07 Troglodyte                Jimmy
+MAP08 Spiritual Hatred          Jimmy
+MAP00 Mysterious Slipgate       DavidN
