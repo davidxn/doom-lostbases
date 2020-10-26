@@ -121,7 +121,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 689.2064f;
+		viewpositionx = -1373.365f;
 		defaulttoptexture = "rock13";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -137,7 +137,7 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 2;
+			gridsize = 16;
 			background = "";
 			backoffsety = 0;
 		}
@@ -145,12 +145,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "rock13";
 		defaultfloortexture = "GROUND12";
-		viewpositiony = -847.4676f;
+		viewpositiony = -175.4088f;
 		defaultwalltexture = "rock13";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 2.701059f;
+		viewscale = 4.564787f;
 		
 		fieldtypes
 		{

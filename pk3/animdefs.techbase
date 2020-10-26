@@ -36,3 +36,5 @@ Texture Optional LAVFALL1 Range LAVFALL4 Tics 8
 Texture Optional OMETLC92 Range OMETLC95 Tics 8
 Texture Optional COMPFUZ1 Range COMPFUZ4 Tics 8
 Texture Optional OWARPD01 Range OWARPD10 Tics 4
+
+Texture Optional LAVASOL1 Range LAVASOL4 Tics 4 Oscillate

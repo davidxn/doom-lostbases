@@ -17,7 +17,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 595.703f;
+		viewpositionx = 570.2715f;
 		defaulttoptexture = "BRONZE1";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -41,12 +41,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "BRONZE1";
 		defaultfloortexture = "OGYMTA04";
-		viewpositiony = -660.5234f;
+		viewpositiony = 732.5597f;
 		defaultwalltexture = "BRONZE1";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 2.543016f;
+		viewscale = 4.297697f;
 		
 		fieldtypes
 		{
