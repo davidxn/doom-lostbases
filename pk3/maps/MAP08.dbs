@@ -121,7 +121,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = -1373.365f;
+		viewpositionx = 351.473f;
 		defaulttoptexture = "rock13";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -145,12 +145,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "rock13";
 		defaultfloortexture = "GROUND12";
-		viewpositiony = -175.4088f;
+		viewpositiony = 260.6129f;
 		defaultwalltexture = "rock13";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 4.564787f;
+		viewscale = 0.9457153f;
 		
 		fieldtypes
 		{
@@ -185,6 +185,31 @@ maps
 				rotationfloor = 1;
 				xscalefloor = 1;
 				yscalefloor = 1;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 7059;
+				firstvisibleline = 221;
+				activetab = true;
 			}
 		}
 	}

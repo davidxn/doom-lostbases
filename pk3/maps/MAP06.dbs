@@ -134,7 +134,7 @@ maps
 		{
 		}
 		overrideceiltexture = false;
-		viewpositionx = 914.9761f;
+		viewpositionx = 1359.814f;
 		defaulttoptexture = "SUPP616A";
 		overrideceilheight = false;
 		useresourcesinreadonlymode = false;
@@ -158,12 +158,12 @@ maps
 		overridebottomtexture = false;
 		defaultbottomtexture = "SUPP616A";
 		defaultfloortexture = "DIAMOND6";
-		viewpositiony = -2850.377f;
+		viewpositiony = -1285.865f;
 		defaultwalltexture = "SUPP616A";
 		customceilheight = 128;
 		overridemiddletexture = false;
 		custombrightness = 196;
-		viewscale = 0.9404652f;
+		viewscale = 1.222603f;
 		
 		fieldtypes
 		{
@@ -195,12 +195,12 @@ maps
 			{
 				xpanningceiling = 1;
 				ypanningceiling = 1;
-				rotationceiling = 1;
+				rotationceiling = 17;
 				xscaleceiling = 1;
 				yscaleceiling = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
-				rotationfloor = 1;
+				rotationfloor = 17;
 				xscalefloor = 1;
 				yscalefloor = 1;
 				ceilingglowheight = 1;
@@ -232,7 +232,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 817;
+				caretposition = 878;
+				firstvisibleline = 8;
 				activetab = true;
 			}
 		}

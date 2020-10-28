@@ -5,6 +5,8 @@ Pulled together from contributions to community projects that never made it!
 Additional work on MAP06 and MAP07 by BillGuy
 Additional code on MAP08 by Accensus
 
+Intermission screen by Knezha - https://www.fiverr.com/knezha
+
 Textures
 --------
 
