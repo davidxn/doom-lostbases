@@ -38,3 +38,11 @@ Texture Optional COMPFUZ1 Range COMPFUZ4 Tics 8
 Texture Optional OWARPD01 Range OWARPD10 Tics 4
 
 Texture Optional LAVASOL1 Range LAVASOL4 Tics 4 Oscillate
+
+Texture Optional INSETM7
+        pic INSETM7 rand 1 2
+        pic INSETM7A rand 5 10
+        pic INSETM7B rand 5 10
+        pic INSETM7C rand 5 10
+        pic INSETM7D rand 5 10
+        Random

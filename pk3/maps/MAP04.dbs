@@ -7,22 +7,27 @@ maps
 	
 	MAP04
 	{
+		defaultwalltexture = "BRONZE1";
+		overridemiddletexture = false;
 		defaultceiltexture = "CEIL3_5";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = false;
+		overrideceiltexture = false;
+		custombrightness = 196;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
-		overrideceiltexture = false;
-		viewpositionx = 570.2715f;
-		defaulttoptexture = "BRONZE1";
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
-		overridefloortexture = false;
+		viewpositiony = 1165.218f;
+		viewpositionx = -1567.112f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		customceilheight = 128;
+		customfloorheight = 0;
 		
 		grid
 		{
@@ -33,53 +38,41 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 8;
+			gridsize = 32;
 			background = "";
 			backoffsety = 0;
 		}
-		overridetoptexture = false;
+		viewscale = 3.678594f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaulttoptexture = "BRONZE1";
 		overridebottomtexture = false;
 		defaultbottomtexture = "BRONZE1";
 		defaultfloortexture = "OGYMTA04";
-		viewpositiony = 732.5597f;
-		defaultwalltexture = "BRONZE1";
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 4.297697f;
+		overrideceilheight = false;
+		overridebrightness = false;
 		
-		fieldtypes
+		testpostcommand
 		{
-			
-			linedef
-			{
-				arg0str = 2;
-			}
-			
-			sidedef
-			{
-				offsetx_mid = 1;
-				offsety_mid = 1;
-				offsetx_top = 1;
-				offsetx_bottom = 1;
-				offsety_top = 1;
-				offsety_bottom = 1;
-			}
-			
-			sector
-			{
-				xpanningceiling = 1;
-				ypanningceiling = 1;
-				rotationceiling = 1;
-				xscaleceiling = 1;
-				yscaleceiling = 1;
-				xpanningfloor = 1;
-				ypanningfloor = 1;
-				rotationfloor = 1;
-				xscalefloor = 1;
-				yscalefloor = 1;
-				ceilingglowcolor = 0;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }

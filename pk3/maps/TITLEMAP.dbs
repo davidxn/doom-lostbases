@@ -7,58 +7,72 @@ maps
 	
 	TITLEMAP
 	{
+		defaultwalltexture = "TITLBG";
+		overridemiddletexture = false;
+		defaultceiltexture = "ALLBLACK";
+		overrideceiltexture = false;
+		custombrightness = 196;
+		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
-		defaultfloortexture = "ALLBLACK";
-		defaultceiltexture = "ALLBLACK";
-		defaulttoptexture = "TITLBG";
-		defaultwalltexture = "TITLBG";
-		defaultbottomtexture = "TITLBG";
-		custombrightness = 196;
-		customfloorheight = 0;
+		viewpositiony = -521.824f;
+		viewpositionx = 269.2209f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 		customceilheight = 128;
-		overridefloortexture = false;
-		overrideceiltexture = false;
-		overridetoptexture = false;
-		overridemiddletexture = false;
-		overridebottomtexture = false;
-		overridefloorheight = false;
-		overrideceilheight = false;
-		overridebrightness = false;
-		uselongtexturenames = false;
-		useresourcesinreadonlymode = false;
-		viewpositionx = 293.8572f;
-		viewpositiony = 454.5444f;
-		viewscale = 0.8449975f;
-		scriptcompiler = "zdoom_acs.cfg";
+		customfloorheight = 0;
 		
 		grid
 		{
-			background = "";
-			backsource = 0;
 			backoffsetx = 0;
-			backoffsety = 0;
-			backscalex = 100;
-			backscaley = 100;
-			gridsize = 8;
-			gridrotate = 0;
-			gridoriginx = 0;
+			backsource = 0;
 			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 32;
+			background = "";
+			backoffsety = 0;
 		}
+		viewscale = 0.8010713f;
 		
-		fieldtypes
+		reloadresourceprecommand
 		{
-			
-			sidedef
-			{
-				scalex_mid = 1;
-				scaley_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_mid = 1;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaulttoptexture = "TITLBG";
+		overridebottomtexture = false;
+		defaultbottomtexture = "TITLBG";
+		defaultfloortexture = "ALLBLACK";
+		overrideceilheight = false;
+		overridebrightness = false;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }

@@ -6,6 +6,28 @@
 ------------------------------------------------------------
 */
 
+class ImmuneIndicator : Actor {
+	Default
+	{
+	//$Title "Immune Indicator"
+	//$Category "L-50/Monsters"
+	scale 0.15;
+	radius 32;
+    +NOBLOCKMAP
+    +NOGRAVITY
+	-RANDOMIZE
+	}
+	
+	States
+	{
+		Spawn:
+		IMMN A 0 NoDelay A_SetScale(frandom(0.1, 0.15));
+		IMMN AAAAAAAAAAAAAAAAAAAA 1 Bright A_SetRenderStyle(Alpha - 0.05, STYLE_Translucent);
+		Stop;
+	}
+			
+}
+
 class L50EliteArchvile : Archvile
 {
 	int user_charge;
@@ -16,7 +38,7 @@ class L50EliteArchvile : Archvile
 		//$Title "Archdevil"
 		//$Category "L-50/Monsters"
 		Health 2000;
-		scale 1;
+		scale 0.8;
 		Radius 32;
 		Height 96;
 		DeathSound "Archdevil/Death";
@@ -109,6 +131,14 @@ class L50EliteArchvile : Archvile
 			DIAB TUVWX 20;
 			DIAB X -1;
 	}
+	
+	override int DamageMobj(Actor inflictor, Actor source, int damage, Name mod, int flags, double angle)
+    {
+		if (bINVULNERABLE) {
+			A_SpawnItemEx("ImmuneIndicator", 20, random(-10, 10), random(60, 80), 0, 0, 1);
+		}
+        return Super.DamageMobj(inflictor,source,damage,mod,flags,angle);
+    }
 }
 
 class L50EliteArchvileFake : L50EliteArchvile

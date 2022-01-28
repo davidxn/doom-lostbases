@@ -5,84 +5,6 @@ strictpatches = 0;
 maps
 {
 	
-	MAP06
-	{
-		defaultceiltexture = "CEIL3_5";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = true;
-		scriptcompiler = "zdoom_acs.cfg";
-		
-		resources
-		{
-		}
-		overrideceiltexture = false;
-		viewpositionx = 1283.204f;
-		defaulttoptexture = "BRONZE1";
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				rotationfloor = 17;
-				xscalefloor = 1;
-				ceilingglowcolor = 0;
-				ypanningceiling = 1;
-				ypanningfloor = 1;
-				xpanningceiling = 1;
-				yscalefloor = 1;
-				xpanningfloor = 1;
-				yscaleceiling = 1;
-				xscaleceiling = 1;
-				rotationceiling = 17;
-			}
-			
-			sidedef
-			{
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_top = 1;
-			}
-			
-			linedef
-			{
-				arg0str = 2;
-			}
-		}
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
-		overridefloortexture = false;
-		
-		grid
-		{
-			backoffsetx = 0;
-			backsource = 0;
-			gridoriginy = 0f;
-			backscaley = 100;
-			gridrotate = 0f;
-			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 16f;
-			background = "";
-			backoffsety = 0;
-		}
-		overridetoptexture = false;
-		overridebottomtexture = false;
-		defaultbottomtexture = "BRONZE1";
-		defaultfloortexture = "FLOOR0_1";
-		viewpositiony = 1025.654f;
-		defaultwalltexture = "BRONZE1";
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 1.074598f;
-	}
-	
 	MAP03
 	{
 		defaultwalltexture = "TEKGREN5";
@@ -95,8 +17,15 @@ maps
 		resources
 		{
 		}
-		viewpositiony = 89.49451f;
-		viewpositionx = 106.6856f;
+		viewpositiony = 1845.831f;
+		viewpositionx = 1443.021f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 		customceilheight = 128;
 		customfloorheight = 0;
 		
@@ -109,85 +38,41 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 4;
+			gridsize = 8;
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 3.668771f;
+		viewscale = 4.435434f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 		defaulttoptexture = "TEKGREN5";
 		overridebottomtexture = false;
-		useresourcesinreadonlymode = false;
 		defaultbottomtexture = "TEKGREN5";
 		defaultfloortexture = "FLOOR33W";
 		overrideceilheight = false;
 		overridebrightness = false;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 		overridefloorheight = false;
 		overridetoptexture = false;
 		uselongtexturenames = false;
 		overridefloortexture = false;
 		
-		fieldtypes
+		reloadresourcepostcommand
 		{
-			
-			linedef
-			{
-				alpha = 1;
-				renderstyle = 2;
-				locknumber = 0;
-				arg0str = 2;
-			}
-			
-			sidedef
-			{
-				offsetx_mid = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_top = 1;
-			}
-			
-			sector
-			{
-				xpanningceiling = 1;
-				ypanningceiling = 1;
-				rotationceiling = 1;
-				xscaleceiling = 1;
-				yscaleceiling = 1;
-				xpanningfloor = 1;
-				ypanningfloor = 1;
-				rotationfloor = 1;
-				xscalefloor = 1;
-				yscalefloor = 1;
-				lightcolor = 0;
-				floor_reflect = 1;
-				lightceiling = 0;
-			}
-		}
-		
-		scriptdocuments
-		{
-			
-			document0
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 498;
-				firstvisibleline = 18;
-				activetab = true;
-			}
-			
-			document1
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }

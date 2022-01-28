@@ -7,22 +7,27 @@ maps
 	
 	MAP01
 	{
+		defaultwalltexture = "SLADWALL";
+		overridemiddletexture = false;
 		defaultceiltexture = "CEIL5_1";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = false;
+		overrideceiltexture = false;
+		custombrightness = 196;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
-		overrideceiltexture = false;
-		viewpositionx = 1529.287f;
-		defaulttoptexture = "SLADWALL";
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
-		overridefloortexture = false;
+		viewpositiony = 397.2909f;
+		viewpositionx = 635.4567f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		customceilheight = 128;
+		customfloorheight = 0;
 		
 		grid
 		{
@@ -37,49 +42,37 @@ maps
 			background = "";
 			backoffsety = 0;
 		}
-		overridetoptexture = false;
+		viewscale = 5.093437f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaulttoptexture = "SLADWALL";
 		overridebottomtexture = false;
 		defaultbottomtexture = "SLADWALL";
 		defaultfloortexture = "NUKAGE1";
-		viewpositiony = -492.0363f;
-		defaultwalltexture = "SLADWALL";
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 1.461916f;
+		overrideceilheight = false;
+		overridebrightness = false;
 		
-		fieldtypes
+		testpostcommand
 		{
-			
-			linedef
-			{
-				arg0str = 2;
-				alpha = 1;
-			}
-			
-			sidedef
-			{
-				offsetx_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_top = 1;
-				offsety_top = 1;
-				offsety_mid = 1;
-				offsety_bottom = 1;
-			}
-			
-			sector
-			{
-				xpanningceiling = 1;
-				ypanningceiling = 1;
-				rotationceiling = 1;
-				xscaleceiling = 1;
-				yscaleceiling = 1;
-				xpanningfloor = 1;
-				ypanningfloor = 1;
-				rotationfloor = 1;
-				xscalefloor = 1;
-				yscalefloor = 1;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }

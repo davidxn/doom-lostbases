@@ -8,3 +8,5 @@ qgrunt/attack		"sounds/grunt/grunt-attack.wav"
 qgrunt/pain			"sounds/grunt/grunt-pain.wav"
 qgrunt/death		"sounds/grunt/grunt-death.wav"
 qgrunt/active		"sounds/grunt/grunt-active.wav"
+
+$volume qgrunt/active 0.7

@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	E1M6
+	MAP08
 	{
 		defaultwalltexture = "rock13";
 		overridemiddletexture = false;
@@ -17,116 +17,17 @@ maps
 		resources
 		{
 		}
-		viewpositiony = 537.6221f;
-		viewpositionx = 1439.895f;
+		viewpositiony = -238.3592f;
+		viewpositionx = -907.798f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 		customceilheight = 128;
 		customfloorheight = 0;
-		
-		grid
-		{
-			backoffsetx = 0;
-			backsource = 0;
-			gridoriginy = 0f;
-			backscaley = 100;
-			gridrotate = 0f;
-			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 8f;
-			background = "";
-			backoffsety = 0;
-		}
-		viewscale = 2.217803f;
-		defaulttoptexture = "rock13";
-		overridebottomtexture = false;
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				rotationfloor = 1;
-				xscalefloor = 1;
-				xscaleceiling = 1;
-				ypanningceiling = 1;
-				ypanningfloor = 1;
-				lightcolor = 0;
-				yscalefloor = 1;
-				xpanningfloor = 1;
-				yscaleceiling = 1;
-				xpanningceiling = 1;
-				rotationceiling = 1;
-			}
-			
-			sidedef
-			{
-				offsety_bottom = 1;
-				offsetx_top = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-				offsetx_mid = 1;
-				offsety_top = 1;
-			}
-			
-			linedef
-			{
-				arg0str = 2;
-				alpha = 1;
-				renderstyle = 2;
-			}
-		}
-		useresourcesinreadonlymode = false;
-		defaultbottomtexture = "rock13";
-		
-		scriptdocuments
-		{
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				firstvisibleline = 185;
-				activetab = true;
-			}
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-		}
-		defaultfloortexture = "GROUND12";
-		overrideceilheight = false;
-		overridebrightness = false;
-		overridefloorheight = false;
-		overridetoptexture = false;
-		uselongtexturenames = false;
-		overridefloortexture = false;
-	}
-	
-	MAP08
-	{
-		defaultceiltexture = "GROUND12";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = false;
-		scriptcompiler = "zdoom_acs.cfg";
-		
-		resources
-		{
-		}
-		overrideceiltexture = false;
-		viewpositionx = 351.473f;
-		defaulttoptexture = "rock13";
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
-		overridefloortexture = false;
 		
 		grid
 		{
@@ -137,80 +38,41 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 16;
+			gridsize = 32;
 			background = "";
 			backoffsety = 0;
 		}
-		overridetoptexture = false;
+		viewscale = 3.511383f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaulttoptexture = "rock13";
 		overridebottomtexture = false;
 		defaultbottomtexture = "rock13";
 		defaultfloortexture = "GROUND12";
-		viewpositiony = 260.6129f;
-		defaultwalltexture = "rock13";
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 0.9457153f;
+		overrideceilheight = false;
+		overridebrightness = false;
 		
-		fieldtypes
+		testpostcommand
 		{
-			
-			linedef
-			{
-				renderstyle = 2;
-				alpha = 1;
-				arg0str = 2;
-			}
-			
-			sidedef
-			{
-				offsetx_mid = 1;
-				offsety_mid = 1;
-				offsetx_top = 1;
-				offsety_top = 1;
-				offsetx_bottom = 1;
-				offsety_bottom = 1;
-			}
-			
-			sector
-			{
-				lightcolor = 0;
-				xpanningceiling = 1;
-				ypanningceiling = 1;
-				rotationceiling = 1;
-				xscaleceiling = 1;
-				yscaleceiling = 1;
-				xpanningfloor = 1;
-				ypanningfloor = 1;
-				rotationfloor = 1;
-				xscalefloor = 1;
-				yscalefloor = 1;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
 		
-		scriptdocuments
+		reloadresourcepostcommand
 		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 7059;
-				firstvisibleline = 221;
-				activetab = true;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }

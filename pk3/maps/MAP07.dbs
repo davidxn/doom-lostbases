@@ -5,126 +5,29 @@ strictpatches = 0;
 maps
 {
 	
-	E4M1
-	{
-		defaultceiltexture = "F_SKY1";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = false;
-		scriptcompiler = "zdoom_acs.cfg";
-		
-		resources
-		{
-		}
-		overrideceiltexture = false;
-		viewpositionx = 5725.41f;
-		defaulttoptexture = "SNOW3";
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				lightcolor = 0;
-				xscaleceiling = 1;
-				ceilingglowcolor = 0;
-				damageamount = 0;
-				xscalefloor = 1;
-				floorglowcolor = 0;
-				xpanningfloor = 1;
-				ceilingglowheight = 1;
-				yscaleceiling = 1;
-				floorglowheight = 1;
-				xpanningceiling = 1;
-				yscalefloor = 1;
-				rotationfloor = 1;
-				fadecolor = 0;
-				rotationceiling = 1;
-				lightceiling = 0;
-				ypanningfloor = 1;
-				damagetype = 2;
-				ypanningceiling = 1;
-				floor_reflect = 1;
-			}
-			
-			sidedef
-			{
-				offsetx_top = 1;
-				scalex_top = 1;
-				scalex_mid = 1;
-				scalex_bottom = 1;
-				scaley_mid = 1;
-				scaley_bottom = 1;
-				offsety_top = 1;
-				scaley_top = 1;
-				light = 0;
-				offsety_bottom = 1;
-				offsetx_mid = 1;
-				offsety_mid = 1;
-				offsetx_bottom = 1;
-			}
-			
-			linedef
-			{
-				locknumber = 0;
-				alpha = 1;
-				arg0str = 2;
-				renderstyle = 2;
-			}
-			
-			thing
-			{
-				arg0str = 2;
-			}
-		}
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
-		overridefloortexture = false;
-		
-		grid
-		{
-			backoffsetx = 0;
-			backsource = 0;
-			gridoriginy = 0f;
-			backscaley = 100;
-			gridrotate = 0f;
-			backscalex = 100;
-			gridoriginx = 0f;
-			gridsize = 32f;
-			background = "";
-			backoffsety = 0;
-		}
-		overridetoptexture = false;
-		overridebottomtexture = false;
-		defaultbottomtexture = "SNOW3";
-		defaultfloortexture = "SNOWF_5";
-		viewpositiony = -2228.147f;
-		defaultwalltexture = "SNOW3";
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 1.009469f;
-	}
-	
 	MAP07
 	{
+		defaultwalltexture = "SNOW3";
+		overridemiddletexture = false;
 		defaultceiltexture = "F_SKY1";
-		overridefloorheight = false;
-		customfloorheight = 0;
-		uselongtexturenames = false;
+		overrideceiltexture = false;
+		custombrightness = 196;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
-		overrideceiltexture = false;
-		viewpositionx = 1203.109f;
-		defaulttoptexture = "SNOW3";
-		overrideceilheight = false;
-		useresourcesinreadonlymode = false;
-		overridebrightness = false;
-		overridefloortexture = false;
+		viewpositiony = 1138.485f;
+		viewpositionx = 37.12981f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		customceilheight = 128;
+		customfloorheight = 0;
 		
 		grid
 		{
@@ -135,100 +38,41 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 16;
+			gridsize = 8;
 			background = "";
 			backoffsety = 0;
 		}
-		overridetoptexture = false;
+		viewscale = 0.2648976f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaulttoptexture = "SNOW3";
 		overridebottomtexture = false;
 		defaultbottomtexture = "SNOW3";
 		defaultfloortexture = "SNOWF_5";
-		viewpositiony = 240.1432f;
-		defaultwalltexture = "SNOW3";
-		customceilheight = 128;
-		overridemiddletexture = false;
-		custombrightness = 196;
-		viewscale = 2.918215f;
+		overrideceilheight = false;
+		overridebrightness = false;
 		
-		fieldtypes
+		testpostcommand
 		{
-			
-			linedef
-			{
-				alpha = 1;
-				renderstyle = 2;
-				locknumber = 0;
-				arg0str = 2;
-			}
-			
-			sidedef
-			{
-				offsetx_bottom = 1;
-				offsety_bottom = 1;
-				offsetx_mid = 1;
-				offsety_mid = 1;
-				offsetx_top = 1;
-				offsety_top = 1;
-				light = 0;
-				scaley_bottom = 1;
-				scaley_top = 1;
-				scalex_bottom = 1;
-				scalex_mid = 1;
-				scaley_mid = 1;
-				scalex_top = 1;
-			}
-			
-			sector
-			{
-				rotationfloor = 1;
-				xpanningfloor = 1;
-				ypanningfloor = 1;
-				xpanningceiling = 1;
-				ypanningceiling = 1;
-				rotationceiling = 1;
-				xscaleceiling = 1;
-				yscaleceiling = 1;
-				xscalefloor = 1;
-				yscalefloor = 1;
-				ceilingglowheight = 1;
-				ceilingglowcolor = 0;
-				lightceiling = 0;
-				floorglowheight = 1;
-				floorglowcolor = 0;
-				lightcolor = 0;
-				floor_reflect = 1;
-				fadecolor = 0;
-			}
-			
-			thing
-			{
-				arg0str = 2;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
 		
-		scriptdocuments
+		reloadresourcepostcommand
 		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 1235;
-				firstvisibleline = 23;
-				activetab = true;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }

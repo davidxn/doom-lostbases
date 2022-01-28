@@ -7,103 +7,72 @@ maps
 	
 	TITLEMAP
 	{
+		defaultwalltexture = "OROCKD04";
+		overridemiddletexture = false;
+		defaultceiltexture = "ALLBLACK";
+		overrideceiltexture = false;
+		custombrightness = 196;
+		scriptcompiler = "zdoom_acs.cfg";
 		
 		resources
 		{
 		}
-		defaultfloortexture = "FLOOR0_1";
-		defaultceiltexture = "ALLBLACK";
-		defaulttoptexture = "OROCKD04";
-		defaultwalltexture = "OROCKD04";
-		defaultbottomtexture = "OROCKD04";
-		custombrightness = 196;
-		customfloorheight = 0;
+		viewpositiony = 3335.475f;
+		viewpositionx = 92.97993f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
 		customceilheight = 128;
-		overridefloortexture = false;
-		overrideceiltexture = false;
-		overridetoptexture = false;
-		overridemiddletexture = false;
-		overridebottomtexture = false;
-		overridefloorheight = false;
-		overrideceilheight = false;
-		overridebrightness = false;
-		uselongtexturenames = false;
-		useresourcesinreadonlymode = false;
-		viewpositionx = -320.9311f;
-		viewpositiony = 3602.983f;
-		viewscale = 5.302217f;
-		scriptcompiler = "zdoom_acs.cfg";
+		customfloorheight = 0;
 		
 		grid
 		{
-			background = "";
-			backsource = 0;
 			backoffsetx = 0;
-			backoffsety = 0;
-			backscalex = 100;
-			backscaley = 100;
-			gridsize = 4;
-			gridrotate = 0;
-			gridoriginx = 0;
+			backsource = 0;
 			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 32;
+			background = "";
+			backoffsety = 0;
 		}
+		viewscale = 0.8459793f;
 		
-		fieldtypes
+		reloadresourceprecommand
 		{
-			
-			linedef
-			{
-				alpha = 1;
-				renderstyle = 2;
-			}
-			
-			sidedef
-			{
-				offsetx_mid = 1;
-				offsety_mid = 1;
-				offsetx_top = 1;
-				offsetx_bottom = 1;
-				offsety_top = 1;
-				offsety_bottom = 1;
-			}
-			
-			sector
-			{
-				xpanningceiling = 1;
-				ypanningceiling = 1;
-				rotationceiling = 17;
-				xscaleceiling = 1;
-				yscaleceiling = 1;
-				xpanningfloor = 1;
-				ypanningfloor = 1;
-				rotationfloor = 17;
-				xscalefloor = 1;
-				yscalefloor = 1;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
+		defaulttoptexture = "OROCKD04";
+		overridebottomtexture = false;
+		defaultbottomtexture = "OROCKD04";
+		defaultfloortexture = "FLOOR0_1";
+		overrideceilheight = false;
+		overridebrightness = false;
 		
-		scriptdocuments
+		testpostcommand
 		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 110;
-				activetab = true;
-			}
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
 		}
 	}
 }
