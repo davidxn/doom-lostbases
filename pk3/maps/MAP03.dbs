@@ -17,8 +17,8 @@ maps
 		resources
 		{
 		}
-		viewpositiony = 1845.831f;
-		viewpositionx = 1443.021f;
+		viewpositiony = 1621.979f;
+		viewpositionx = 1977.582f;
 		
 		testprecommand
 		{
@@ -42,7 +42,7 @@ maps
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 4.435434f;
+		viewscale = 2.624514f;
 		
 		reloadresourceprecommand
 		{
@@ -73,6 +73,30 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				firstvisibleline = 15;
+				activetab = true;
+			}
 		}
 	}
 }
